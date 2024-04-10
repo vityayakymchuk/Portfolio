@@ -1,0 +1,17 @@
+:root {
+  --color-dark: #1c1d20;
+  --color-dark-light: #242527;
+  --color-dark-grey: #3b3b3b;
+  --color-btn: #ed3b44;
+  --color-white: #fafafa;
+  --color-btn-focus: #E0373F;
+  --border-color: rgba(250, 250, 250, 0.2);
+  --border-hover: #fafafa;
+  --color-transp-06-text: color: rgba(250, 250, 250, 0.6);;
+  --color-green: #3cbc81;
+  --color-red: #e74a3b;
+  --color-transp-04-text: rgba(250, 250, 250, 0.4);
+  --color-transp-02-text: rgba(250, 250, 250, 0.2);
+  --color-text-projects:#1c1d20;
+  --color-border-projects: rgba(28, 29, 32, 0.2);
+}
