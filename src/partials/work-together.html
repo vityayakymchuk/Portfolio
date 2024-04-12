@@ -1,23 +1,24 @@
 <footer class="footer" id="work-together">
   <div class="container footer-container">
     <div class="work-together">
-      <img class="footer-img" srcset="../img/work-together/image.png 1x,
-        ../img/work-together/image2x.png 2x
-        " src="../img/work-together/image.png" alt="Lloyd Jeffersonr" />
+      <img class="footer-img" srcset="
+          ../img/work-together/jefferson.jpg    1x,
+          ../img/work-together/jefferson@2x.jpg 2x
+        " src="../img/work-together/jefferson.jpg" alt="Lloyd Jeffersonr">
 
-      <h2 class="footer-header">
-        Let’s <span class="footer-header text-red"> work</span>
+      <h2 class="footer-paragraph">
+        Let’s <span class="footer-paragraph coloured-text"> work</span> <br />
         together
       </h2>
     </div>
 
     <form class="footer-form">
       <div class="form-fields">
-        <input class="form-input" type="email" required name="user-email" id="user-email"
-          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="clients@gmail.com">
-        <input class="form-input" type="text" required name="user-comment" id="user-comment" placeholder="comments">
+        <input class="form-input" type="email" required name="userEmail" id="user-email"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="clients@gmail.com" />
+        <input class="form-input" type="text" required name="userComment" id="user-comment" placeholder="comments" />
       </div>
-      <button type="submit" class="send-form-btn">Send</button>
+      <button class="send-form-btn" type="submit">Send</button>
     </form>
 
     <div class="footer-links">
@@ -31,7 +32,7 @@
 
 <div class="backdrop">
   <div class="modal">
-    <button type="button" class="modal-close-btn">
+    <button class="modal-close-btn" type="button">
       <svg class="modal-close-btn-icon">
         <use href="../img/sprite.svg#icon-exit"></use>
       </svg>
