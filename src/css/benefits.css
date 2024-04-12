@@ -1,6 +1,9 @@
 body{
   background-color: var(--color-dark);
 }
+li{
+  list-style: none;
+}
 
 
 .benefits-title {
@@ -25,16 +28,14 @@ text-shadow: 2px 2px 2px rgba(0,0,0,0.25);
 
 .benefits-svg {
   stroke: var(--color-white);
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-bottom: 12px;
-  padding-top: 12px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color:var(--color-btn);
   border-radius: 10px;
   margin-bottom: 64px;
-}
-
-.benefits-background-color {
- background-color:var(--color-btn);
 }
 
 .benefits-p {
