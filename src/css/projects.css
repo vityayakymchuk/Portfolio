@@ -15,7 +15,6 @@
 
   .projects-top-section {
     margin-top: 32px;
-    height: 417px;
     background-color: #fafafa;
     border-radius: 24px 24px 0 0;
     padding: 32px;
@@ -27,7 +26,7 @@
     flex-wrap: wrap;
     align-content: flex-start;
     align-items: flex-start;
-    gap: 10px;
+    gap: 6px;
   }
 
   .technologies-list-item {
@@ -46,7 +45,8 @@
     line-height: 1.17;
     letter-spacing: -0.03em;
     color: hsl(225, 7%, 12%);
-    margin-top: 72px;
+    margin-top: 96px;
+    margin-bottom: 32px;
   }
   
   .projects-btn {
@@ -60,10 +60,14 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin: 32px 0 0 0;
-    padding: 13px 0;
+    padding: 13px;
   }
 
+  .projects-bottom-section{
+    background-color: #242527;
+    margin-bottom: 32px;
+  }
+  
 .arrows {
     display: flex;
   justify-content: center;
@@ -89,7 +93,7 @@
     stroke: #3B3B3B;
   }
 
-  @media screen and (max-width: 374.98px) {
+  /* @media screen and (max-width: 374.98px) {
     .container {
       max-width: 375px;
     }
@@ -105,10 +109,11 @@
     .container {
       max-width: 768px;
     }
-  }
+    }
+  
   
   @media screen and (min-width: 1440px) {
     .container {
       max-width: 1440px;
     }
-  }
+  } */
