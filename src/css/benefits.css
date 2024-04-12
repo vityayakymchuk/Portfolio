@@ -1,0 +1,115 @@
+body {
+  background-color: var(--color-dark);
+}
+li {
+  list-style: none;
+}
+
+.benefits-title {
+  font-size: 16px;
+  color: var(--color-transp-04-text);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.benefits-a {
+  color: var(--color-white);
+  padding-bottom: 18px;
+  padding-top: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 60px;
+  margin-top: 32px;
+  display: block;
+  width: 187px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.benefits-svg {
+  stroke: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-btn);
+  border-radius: 10px;
+  margin-bottom: 64px;
+}
+
+.benefits-p {
+  color: rgba(250, 250, 250, 0.6);
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
+.benefits-card-div {
+  background-color: var(--color-dark-light);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  border-radius: 20px;
+}
+
+.benefits-li {
+  font-size: 20px;
+}
+
+.benefits-section {
+  padding-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+
+  .benefits-ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* width: 768px; */
+    height: 556px;
+    gap: 16px 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .benefits-card-div {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .benefits-card-div {
+    width: 344px;
+  }
+  .benefits-a {
+    margin-top: 64px;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .benefits-title {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    display: flex;
+    min-width: 1440px;
+    justify-content: space-between;
+    /* margin-left: 0;
+    margin-right: 0; */
+  }
+  .benefits-a {
+    margin-top: 64px;
+  }
+  .benefits-ul {
+    width: 680px;
+  }
+  .benefits-section {
+  }
+}
