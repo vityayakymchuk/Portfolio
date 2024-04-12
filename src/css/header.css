@@ -1,0 +1,139 @@
+/* .container {
+    position: relative;
+} */
+
+
+
+body {
+    background-color: black;
+}
+
+.container {
+    position: absolute;
+    position: relative;
+    top: 0 v;
+    left: 0 v;
+    width: 100%;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 32px;
+
+}
+
+
+.img-and-name {
+
+    display: flex;
+    gap: 8px;
+}
+
+.header-img {
+    border-radius: 18px;
+    overflow: hidden;
+
+}
+
+.header-svg-logo {
+    width: 84px;
+    height: 19px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color: var(--color-white)
+}
+
+.header-btn-burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+
+
+
+.header-svg-burger {
+    width: 28px;
+    height: 28px;
+    stroke: var(--color-white);
+}
+
+.hidden {
+    display: none;
+}
+
+/* ================================= TABLET ================================= */
+
+
+@media screen and (min-width: 768px) {
+    .hidden {
+        display: block;
+    }
+
+
+    .header-btn-burger {
+        display: none;
+    }
+
+    .header {
+        max-width: 768px;
+    }
+
+
+    .burger-tablet-and-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: inherit;
+        border: 0;
+        padding: 10px;
+        width: 60px;
+        height: 39px;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    .button-for-orders {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        border-radius: 60px;
+        background-color: var(--color-btn);
+        width: 163px;
+        height: 55px;
+    }
+
+
+    .menu-slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .click-slider-menu {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+}
+
+/* ================================= DESKTOP ================================= */
+
+@media screen and (min-width: 1440px) {
+
+    .header {
+        max-width: 1440px;
+    }
+
+}
