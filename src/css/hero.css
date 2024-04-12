@@ -6,8 +6,6 @@
     height: 812px;
     min-width: 100%;
 
-
-
     background-color: var(--color-dark);
     background-position: center top;
 
@@ -19,59 +17,31 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: -webkit-image-set('../img/header/glass-effect222@2x.jpg');
-    background-image: image-set('../img/header/glass-effect222@2x.jpg');
+    background-image: -webkit-image-set('../img/header/glass-effect-mobile@1x.jpg');
+    background-image: image-set('../img/header/glass-effect-mobile@1x.jpg');
 
     z-index: -10000;
-
-
-
-    /* background: linear-gradient(to right,
-
-            #9c3036 0%,
-            #9c3036 12.5%,
-            #942a30 13%,
-            #992f35 24.5%,
-            #69282d 25%,
-            #60272b 37.5%,
-            #2f1f23 38%,
-            #271f22 50%,
-            #1d1d20 50.5%,
-            #1c1c1f 62.5%,
-            #19191c 63%,
-            #1d1d20 75%,
-            #1c1d20 75.5%); */
-
-
     /* backdrop-filter: blur(100px); */
-
-
 }
 
-/* .hero-section {
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px),
+screen and (min-devace-pixel-ratio: 2) and (max-width: 767px) {
+    .gradient {
+        background-image: -webkit-image-set('../img/header/glass-effect-mobile@2x.jpg');
+        background-image: image-set('../img/header/glass-effect-mobile@2x.jpg');
+    }
+}
 
 
-    background-position: center top;
-
-    background-size: 100% 812px;
 
 
-    background-repeat: no-repeat;
-    background-size: contain;
-} */
 
-/* .aaa {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-image: -webkit-image-set('../img/header/glass-effect222@2x.jpg');
-    background-image: image-set('../img/header/glass-effect222@2x.jpg');
-
-    z-index: -1
-} */
+.hero-section {
+    height: 812px;
+    padding-top: 281px;
+    padding-bottom: 32px;
+}
 
 
 .hero-h1 {
@@ -84,7 +54,6 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: var(--border-hover);
-    margin-top: 169px;
     margin-bottom: 212px;
 }
 
@@ -92,23 +61,11 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    /* gap: 4px; */
-    gap: 10px;
+    gap: 4px;
 
 }
 
 .item-link-portfolio {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-
-    /* border: 1px solid var(--color-transp-04-text);
-    border-radius: 60px; */
-    /* padding: 7px; */
-    /* transition: border-color 250ms ease-in-out; */
-    /* width: 37px; */
-    /* height: 37px; */
-    /* margin-bottom: 32px; */
 
     font-size: 14px;
     letter-spacing: -0.02em;
@@ -133,7 +90,7 @@
     border: 1px solid var(--color-transp-04-text);
     border-radius: 60px;
     transition: border-color 250ms ease-in-out;
-
+    height: 37px;
     padding: 10px 12px;
 }
 
@@ -151,22 +108,16 @@
 
 @media screen and (max-width: 359px) {
     .hero-h1 {
-        margin-bottom: 130px;
+        margin-bottom: 120px;
     }
 
-    /* .item-link-portfolio {
-        padding: 2px;
-    } */
 }
 
-@media screen and (min-width:360px) and (max-width: 374px) {
+@media screen and (min-width:359px) and (max-width: 374px) {
     .hero-h1 {
-        margin-bottom: 100px;
+        margin-bottom: 170px;
     }
 
-    /* .item-link-portfolio {
-        padding: 2px;
-    } */
 }
 
 
@@ -175,81 +126,33 @@
 
 @media screen and (min-width: 768px) {
     .gradient {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-
-        /* background: linear-gradient(to left,
-                #1c1d20 49.68%,
-                #69292d 67.73%,
-                #ed3b44 100%); */
-
-
-        background: linear-gradient(to right,
-
-                #9c3036 0%,
-                #9c3036 12.5%,
-                #942a30 12.5%,
-                #992f35 25%,
-                #69282d 25%,
-                #60272b 37.5%,
-                #2f1f23 37.5%,
-                #271f22 50%,
-                #1d1d20 50%,
-                #1c1c1f 62.5%,
-                #19191c 62.5%,
-                #1d1d20 75%,
-                #1c1d20 75%,
-                #1c1d20 100%);
-
-        /* background: linear-gradient(to right,
-    
-                #9c3036 0%,
-                #9c3036 12.5%,
-                #942a30 13%,
-                #992f35 24.5%,
-                #69282d 25%,
-                #60272b 37.5%,
-                #2f1f23 38%,
-                #271f22 50%,
-                #1d1d20 50.5%,
-                #1c1c1f 62.5%,
-                #19191c 63%,
-                #1d1d20 75%,
-                #1c1d20 75.5%); */
-
-
-        backdrop-filter: blur(100px);
-
         height: 1024px;
-        min-width: 320px;
-        z-index: -1;
+
+        background-image: -webkit-image-set('../img/header/glass-effect-tablet@1x.jpg');
+        background-image: image-set('../img/header/glass-effect-tablet@1x.jpg');
+
     }
 
-    /* .hero-section {
-    
-    
-        background-position: center top;
-    
-        background-size: 100% 812px;
-    
-    
-        background-repeat: no-repeat;
-        background-size: contain;
-    } */
+    @media screen and (min-resolution: 192dpi) and (max-width: 1439px),
+    screen and (min-resolution: 2dppx) and (max-width: 1439px),
+    screen and (min-devace-pixel-ratio: 2) and (max-width: 1439px) {
+        .gradient {
+            background-image: -webkit-image-set('../img/header/glass-effect-tablet@2x.jpg');
+            background-image: image-set('../img/header/glass-effect-tablet@2x.jpg');
+        }
+    }
 
     .hero-section {
-        max-width: 100%;
+        height: 1024px;
+        padding-top: 300px;
+        padding-bottom: 31px;
     }
 
 
     .hero-h1 {
         max-width: 632px;
         font-size: 90px;
-        color: var(--border-hover);
-        margin-top: 188px;
+        font-style: normal;
         margin-bottom: 187px;
     }
 
@@ -257,15 +160,18 @@
         gap: 8px;
     }
 
+    .item-link-portfolio {
+        font-size: 16px;
+    }
+
     .li-link-portfolio {
         width: 55px;
         height: 55px;
-
-
     }
 
-    .item-link-portfolio {
-        font-size: 16px;
+    .li-email-portfolio {
+        height: 55px;
+        padding: 18px 24px;
     }
 
 }

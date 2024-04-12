@@ -1,14 +1,13 @@
 /* .container {
     position: relative;
+
 } */
 
 
 
-body {
-    background-color: black;
-}
 
-.container {
+
+/* .container {
     position: absolute;
     position: relative;
     top: 0 v;
@@ -21,8 +20,27 @@ body {
     justify-content: space-between;
     margin-top: 32px;
 
+} */
+
+
+
+
+.header {
+    position: absolute;
+    top: 32px;
+    width: 343px;
+    display: flex;
+    justify-content: space-between;
+    background-image: inherit;
+
+
 }
 
+@media screen and (max-width: 375px) {
+    .header {
+        max-width: 285px;
+    }
+}
 
 .img-and-name {
 
@@ -36,7 +54,7 @@ body {
 
 }
 
-.header-svg-logo {
+.header-logo {
     width: 84px;
     height: 19px;
     font-weight: 500;
@@ -77,27 +95,42 @@ body {
         display: block;
     }
 
-
     .header-btn-burger {
         display: none;
     }
 
     .header {
-        max-width: 768px;
+        width: 704px;
     }
 
-
     .burger-tablet-and-desktop {
+        letter-spacing: -0.02em;
+        border: 0;
+        background-color: transparent;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: inherit;
-        border: 0;
-        padding: 10px;
-        width: 60px;
+        width: 67px;
         height: 39px;
+
         text-decoration: underline;
         text-underline-offset: 3px;
+    }
+
+    .click-slider-menu {
+        position: absolute;
+        opacity: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+
+        transition: opacity 250ms ease-in-out;
+    }
+
+    .click-slider-menu.is-menu {
+        opacity: 1;
     }
 
     .button-for-orders {
@@ -106,25 +139,18 @@ body {
         align-items: center;
         border: 0;
         border-radius: 60px;
-        background-color: var(--color-btn);
         width: 163px;
         height: 55px;
+        background-color: var(--color-btn);
+        transition: background-color 250ms ease-in-out;
+
+        letter-spacing: -0.02em;
     }
 
-
-    .menu-slider {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .button-for-orders:hover {
+        background-color: var(--color-btn-focus);
     }
 
-
-    .click-slider-menu {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-    }
 
 }
 
