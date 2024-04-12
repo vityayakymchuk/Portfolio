@@ -1,14 +1,12 @@
-body{
+body {
   background-color: var(--color-dark);
 }
 
-
 .benefits-title {
-font-size: 16px;
-color: var(--color-transp-04-text);
-text-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+  font-size: 16px;
+  color: var(--color-transp-04-text);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
-
 
 .benefits-a {
   color: var(--color-white);
@@ -34,7 +32,7 @@ text-shadow: 2px 2px 2px rgba(0,0,0,0.25);
 }
 
 .benefits-background-color {
- background-color:var(--color-btn);
+  background-color: var(--color-btn);
 }
 
 .benefits-p {
@@ -44,7 +42,7 @@ text-shadow: 2px 2px 2px rgba(0,0,0,0.25);
 }
 
 .benefits-card-div {
-  background-color:var(--color-dark-light);
+  background-color: var(--color-dark-light);
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 24px;
@@ -61,10 +59,9 @@ text-shadow: 2px 2px 2px rgba(0,0,0,0.25);
 }
 
 @media screen and (min-width: 768px) {
-
-  .container{
-min-width: 768px;
-}
+  .container {
+    min-width: 768px;
+  }
 
   .benefits-ul {
     display: grid;
@@ -73,32 +70,23 @@ min-width: 768px;
     height: 556px;
     gap: 16px 16px;
   }
-
 }
 
-@media screen and (max-width: 767px) {
-.benefits-card-div {
- margin-bottom: 16px;
+@media screen and (min-width: 768px) {
+  .benefits-card-div {
+    margin-bottom: 16px;
+  }
+  .benefits-title {
+    margin-bottom: 32px;
+  }
 }
-} 
-
-@media screen and (max-width: 1439px) {
-
-.benefits-title{
-  margin-bottom: 32px;
-}
-
-} 
-
+/* 
 @media screen and (min-width: 1440px) {
- .container {
- display: flex;
- min-width: 1376px;
- justify-content: space-between;
+  .container {
+    min-width: 1376px;
   }
 
- .benefits-a {
-   margin-top: 64px;
-}
-
-}
+  .benefits-a {
+    margin-top: 64px;
+  }
+} */
