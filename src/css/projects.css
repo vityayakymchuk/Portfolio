@@ -93,27 +93,39 @@
     stroke: #3B3B3B;
   }
 
-  /* @media screen and (max-width: 374.98px) {
+  @media screen and (min-width: 320px) {
     .container {
       max-width: 375px;
-    }
-  }
-  
-  @media screen and (min-width: 375px) {
-    .container {
-     max-width: 375px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   
   @media screen and (min-width: 768px) {
-    .container {
-      max-width: 768px;
+
+      .container {
+        max-width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
     }
+
+    .projects-sections {
+      display: flex;
+      flex-direction: row;
+    } 
+
+    .projects-top-section {
+      padding: 64px;
     }
   
-  
+    .projects-text {
+      margin-top: 164px;
+  }
+}
   @media screen and (min-width: 1440px) {
     .container {
       max-width: 1440px;
     }
-  } */
+
+    
+  }
