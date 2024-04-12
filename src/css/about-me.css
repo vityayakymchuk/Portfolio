@@ -1,0 +1,138 @@
+.section-about-me{
+    background-color: var(--color-dark);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.about-me-container {
+    width: 375px;
+    padding-left: 12px;
+    padding-right: 12px;
+    /* position: relative; */
+}
+
+.title-with-photo{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    width: 343px;
+    height: 500px;
+    padding: 32px;
+    background-color: #242527;
+    /* Добавить в root */
+}
+.title-text{
+    width: 279px;
+    font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 105%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: var(--main-text);
+}
+.title-functional{
+   color: var(--color-btn);
+}
+.title-websites {
+    color: var(--color-transp-04-text);
+}
+.about-image {
+    border-radius: 24px;
+    width: 343px;
+    height: 500px;
+}
+
+div.about-me-container .accordion-about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.accordion-info-about-me {
+    margin-left: auto;
+    margin-right: auto;
+    width: 343px;
+}
+.accordion-item{
+    border: none;
+    border-bottom: 1px solid #fafafa33;
+    padding-bottom: 20px;
+    position: relative;
+    background-color: transparent;
+    margin-top: 32px;
+}
+.accordion-item-title{
+color: #fafafa66;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.ac-panel-items-descr{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.ac-item-text{
+    font-family: 'Inter Tight', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+        font-weight: 500;
+        color: #fafafa;
+        padding: 0;
+}
+.ac-role-descr .ac-educ-descr{
+    display: flex;
+        flex-direction: column;
+        gap: 15px;
+}
+
+
+.accordion-button-up-down {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border: 1px var(--color-transp-02-text);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: transform 250ms linear;
+}
+
+.accordion-about-me-svg {
+    width: 35px;
+    height: 35px;
+}
+.swiper-slide {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fafafa;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    /* background-color: #242527; */
+    justify-content: center;
+    align-items: center;
+}
