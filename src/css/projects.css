@@ -1,5 +1,5 @@
 .projects {
-    background-color: #1c1d20;
+    background-color: var(--color-dark);
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -10,12 +10,12 @@
     line-height: 1.5;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: rgba(250, 250, 250, 0.4);
+    color: var(--color-transp-04-text);
     margin-bottom: 32px;
   }
 
   .projects-top-section {
-    background-color: #fafafa;
+    background-color: var(--color-white);
     border-radius: 24px 24px 0 0;
     padding: 32px;
   }
@@ -34,7 +34,7 @@
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
-    border: 1px solid rgba(28, 29, 32, 0.2);
+    border: 1px solid var(--color-border-projects);
     border-radius: 60px;
     padding: 13px 18px;
   }
@@ -44,15 +44,15 @@
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: -0.03em;
-    color: hsl(225, 7%, 12%);
+    color: var(--color-dark);
     margin-top: 96px;
     margin-bottom: 32px;
   }
   
   .projects-btn {
     border-radius: 60px;
-    background-color: #ed3b44;
-    color: #fafafa;
+    background-color: var(--color-btn);
+    color: var(--color-white);
     font-weight: 500;
     font-size: 16px;
     max-width: 141px;
@@ -64,7 +64,7 @@
   }
 
   .projects-bottom-section{
-    background-color: #242527;
+    background-color: var(--color-dark-light);
     display: block;
     justify-content: center;
     align-items: center;
@@ -93,13 +93,13 @@
     width: 52px;
     height: 52px;
     background-color: transparent;
-    border: 1px solid rgba(250, 250, 250, 0.2);
+    border: 1px solid var(--color-transp-02-text);
   }
   
   .arrow-icon {
     width: 24px;
     height: 24px;
-    stroke: #3B3B3B;
+    stroke: var(--color-dark-grey);
   }
   
   @media screen and (min-width: 375px) {
@@ -117,7 +117,13 @@
     }
   
     .projects-text {
+      font-size: 44px;
       margin-top: 164px;
+      max-width: 494px;
+  }
+  .projects-btn {
+    max-width: 177px;
+    padding: 18px;
   }
 
   .projects-bottom-section{
