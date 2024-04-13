@@ -95,7 +95,8 @@ screen and (min-devace-pixel-ratio: 2) and (max-width: 767px) {
     padding: 10px 12px;
 }
 
-.item-link-portfolio:hover {
+.li-link-portfolio:hover,
+.li-email-portfolio:hover {
     border-color: var(--border-hover);
 }
 

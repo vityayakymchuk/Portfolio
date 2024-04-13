@@ -1,11 +1,15 @@
 import {
   btn,
+  closeMobileMenu,
+  closeTablAndDeskMenu,
   modalOn,
   modalOff,
+  modalOnMenu,
+  modalOffMenu,
   listenerOn,
-  listenerInTabletOrDesktopOn,
   listenerOff,
+  menuClosed,
+  listenerInTabletOrDesktopOn,
+  listenerInTabletOrDesktopOff,
+  menuClosedTablAndDeskt,
 } from './header-modal';
-
-// btn.burger.addEventListener('click', modalOn);
-// btn.close.addEventListener('click', modalOff);
