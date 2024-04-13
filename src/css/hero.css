@@ -7,7 +7,7 @@
     min-width: 100%;
 
     background-color: var(--color-dark);
-    background-position: center top;
+    background-position: center center;
 
     background: linear-gradient(to left,
             rgba(28, 29, 32, 1) 49.68%,
