@@ -8,6 +8,7 @@
 }
 /* MOBILE */
 .reviews-title {
+<<<<<<< Updated upstream
     font-size: 16px;
     font-weight: 600;
     line-height: 1.5;
@@ -15,6 +16,15 @@
     text-align: left;
     color: var(--color-transp-04-text);
     margin-bottom: 32px;
+=======
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--color-transp-04-text);
+  margin-bottom: 32px;
+>>>>>>> Stashed changes
 }
 
 .swiper {
@@ -28,6 +38,7 @@
 }
 /* тут перебиваю стилі лібки */
 .swiper .swiper-slide {
+<<<<<<< Updated upstream
     height: 302px;
     overflow: auto;
     padding: 32px 24px 32px 24px;
@@ -35,6 +46,14 @@
     border: 1px solid var(--border-color);
     border-radius: 20px;
         
+=======
+  height: 302px;
+  overflow: auto;
+  padding: 32px 24px 32px 24px;
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+>>>>>>> Stashed changes
 }
 /* ховаю скролбар на слайдах */
 .swiper .swiper-slide::-webkit-scrollbar {
@@ -51,6 +70,7 @@
   gap: 8px;
 }
 .review-author {
+<<<<<<< Updated upstream
     
     /* Mobile/H5 */
     color: var(--color-white);
@@ -70,6 +90,26 @@
     line-height: 1.5;
     letter-spacing: -0.02em;;
     text-align: left;
+=======
+  /* Mobile/H5 */
+  color: var(--color-white);
+  font-family: Inter Tight;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.review-text {
+  /* Mobile/Main text */
+  color: var(--color-transp-06-text);
+  font-family: Inter Tight;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: left;
+>>>>>>> Stashed changes
 }
 .swiper-buttons {
   display: flex;
@@ -79,6 +119,7 @@
 }
 
 .review-btn {
+<<<<<<< Updated upstream
     padding: 14px;
     background-color: inherit;
     /* не було в рутах */
@@ -93,6 +134,22 @@
 .review-btn:disabled {
     border: 1px solid var(--border-color)
     
+=======
+  padding: 14px;
+  background-color: var (--color-dark-grey);
+  /* не було в рутах */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-btn:disabled {
+  border: 1px solid var(--border-color);
+>>>>>>> Stashed changes
 }
 
 .review-icon {
@@ -100,7 +157,11 @@
 }
 
 .review-btn:disabled .review-icon {
+<<<<<<< Updated upstream
     stroke: var(--color-dark-grey);
+=======
+  stroke: var(--color-dark-grey);
+>>>>>>> Stashed changes
 }
 
 @media screen and (min-width: 768px) {
