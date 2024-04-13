@@ -107,8 +107,10 @@
       max-width: 375px;
     }
   }
+
   @media screen and (min-width: 768px) {
-.container {
+  
+    .container {
   max-width: 768px;
 }
 
@@ -121,6 +123,7 @@
       margin-top: 164px;
       max-width: 494px;
   }
+
   .projects-btn {
     max-width: 177px;
     padding: 18px;
@@ -133,23 +136,26 @@
   }
   
   @media screen and (min-width: 1440px) {
+
 .container {
   max-width: 1440px;
 }
+
     .projects-sections {
       display: flex;
       flex-direction: row;
-      
     } 
 
     .projects-top-section {
       height: 625px;
+      width: 688px;
     border-radius: 24px 0 0 24px;
     margin-bottom: 64px;
     }
 
     .projects-bottom-section{
       height: 625px;
+      width: 688px;
       padding: 120px 37px;
       border-radius:  0 24px 24px 0;
     }
