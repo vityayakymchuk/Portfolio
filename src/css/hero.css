@@ -62,8 +62,9 @@ screen and (min-devace-pixel-ratio: 2) and (max-width: 767px) {
     justify-content: flex-end;
     flex-wrap: wrap;
     gap: 4px;
-
 }
+
+/* .menu-link-portfolio:hover {} */
 
 .item-link-portfolio {
 
@@ -144,6 +145,7 @@ screen and (min-devace-pixel-ratio: 2) and (max-width: 767px) {
 
     .hero-section {
         height: 1024px;
+        width: 100%;
         padding-top: 300px;
         padding-bottom: 31px;
     }
@@ -206,7 +208,7 @@ screen and (min-devace-pixel-ratio: 2) and (max-width: 767px) {
 
     .hero-h1 {
         max-width: 1084px;
-        margin-bottom: 153px;
+        margin-bottom: 244px;
     }
 
     .menu-link-portfolio {
