@@ -1,33 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Portfolio/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Portfolio</title>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/Portfolio/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <title>Portfolio</title>
+  
+  <script type="module" crossorigin src="/Portfolio/commonHelpers.js"></script>
+  <link rel="stylesheet" href="/Portfolio/assets/index-b797abe9.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+        <div class="img-and-name">
+            <img class="header-img" srcset="../img/header/header-face@2x.jpg 2x" src="../img/header/header-face@1x.jpg"
+                alt="My face">
+            <h2 class="header-logo">jefferson*</h2>
+        </div>
+        <div class="menu-slider">
+            <button class="burger-tablet-and-desktop hidden" type="button">Menu</button>
+            <ul class="click-slider-menu hidden">
+                <li>
+                    <a href="#">About me</a>
+                </li>
+                <li>
+                    <a href="#">Benefits</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <button class="button-for-orders hidden" type="button">Order the project</button>
+        <button class="header-btn-burger" type="button">
+            <svg class="header-svg-burger" aria-label="menu">
+                <use href="/Portfolio/assets/sprite-857690e6.svg#icon-burger" width="28" height="28"></use>
+            </svg>
+        </button>
+    </div>
+</header>
+  <main>
+    <section class="hero-section">
+    <div class="container">
+
+        <div class="gradient"></div>
+
+        <h1 class="hero-h1">
+            Hello.<br>
+            I’m Fullstack developer
+            Lloyd Jefferson.
+        </h1>
+
+        <ul class="menu-link-portfolio list">
+            <li class="li-link-portfolio">
+                <a class="item-link-portfolio link" href="https://www.instagram.com/goitclub/" target="_blank">IG</a>
+            </li>
+            <li class="li-link-portfolio">
+                <a class="item-link-portfolio link" href="https://www.facebook.com/goITclub/" target="_blank">FB</a>
+            </li>
+            <li class="li-link-portfolio">
+                <a class="item-link-portfolio link" href="https://www.youtube.com/c/GoIT" target="_blank">YT</a>
+            </li>
+            <li class="li-link-portfolio">
+                <a class="item-link-portfolio link" href="#" target="_blank">GH</a>
+            </li>
+            <li class="li-email-portfolio">
+                <a class="item-link-portfolio link" href="#" target="_blank">lloydjefferson@gmail.com</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+</section>
     
-    <script type="module" crossorigin src="/Portfolio/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Portfolio/assets/index-07c757a0.css">
-  </head>
-  <body>
-    
-    <main>
-      
-      
-      <section class="benefits-section">
+    <section class="benefits-section">
   <div class="container double">
     <h2 class="benefits-title">BENEFITS OF WORKING WITH ME</h2>
     <div>
@@ -101,15 +160,53 @@
     </div>
   </div>
 </section>
+    
+    
+    
+    
+  </main>
+  
+  <!-- ========================= Backdrop =========================-->
+<div class="mobile-menu-wrapper" data-menu>
 
-      
-      
-      
-      
-    </main>
-    
-    
+    <div class="gradient-modal"></div>
 
-    
-  </body>
+    <div class="mobile-container-menu container">
+
+
+        <div class="mobile-top">
+            <button class="close-btn-backdrop" type="button" data-menu-close>
+                <svg class="header-svg-burger" width="14" height="14" aria-label="close button menu">
+                    <use href="/Portfolio/assets/sprite-857690e6.svg#icon-exit"></use>
+                </svg>
+            </button>
+        </div>
+
+        <nav class="mobile-navigation-wrapper">
+            <ul class="header-menu-wrapper list">
+                <li class="header-menu-item">
+                    <a class="header-menu-link link" href="#">About me</a>
+                </li>
+                <li class="header-menu-item">
+                    <a class="header-menu-link link" href="#">Benefits</a>
+                </li>
+                </li>
+                <li class="header-menu-item">
+                    <a class="header-menu-link link" href="#">Projects</a>
+                </li>
+                <li class="header-menu-item">
+                    <a class="header-menu-link link" href="#">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="btn-order-the-project" type="button">Order the project</button>
+    </div>
+</div>
+<!--========================= /Backdrop ========================= -->
+  <!-- Комент -->
+
+  
+</body>
+
 </html>
