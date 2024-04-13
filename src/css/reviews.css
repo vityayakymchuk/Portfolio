@@ -80,7 +80,7 @@
 
 .review-btn {
     padding: 14px;
-    background-color: var (--color-dark-grey);
+    background-color: inherit;
     /* не було в рутах */
     border: 1px solid rgba(255, 255, 255, 0.5); 
     border-radius: 60px;
