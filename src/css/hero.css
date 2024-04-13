@@ -181,94 +181,49 @@ screen and (min-devace-pixel-ratio: 2) and (max-width: 767px) {
 
 @media screen and (min-width: 1440px) {
     .gradient {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-
-        /* background: linear-gradient(to left,
-                    #1c1d20 49.68%,
-                    #69292d 67.73%,
-                    #ed3b44 100%); */
-
-
-        background: linear-gradient(to right,
-
-                #9c3036 0%,
-                #9c3036 12.5%,
-                #942a30 12.5%,
-                #992f35 25%,
-                #69282d 25%,
-                #60272b 37.5%,
-                #2f1f23 37.5%,
-                #271f22 50%,
-                #1d1d20 50%,
-                #1c1c1f 62.5%,
-                #19191c 62.5%,
-                #1d1d20 75%,
-                #1c1d20 75%,
-                #1c1d20 100%);
-
-        /* background: linear-gradient(to right,
-        
-                    #9c3036 0%,
-                    #9c3036 12.5%,
-                    #942a30 13%,
-                    #992f35 24.5%,
-                    #69282d 25%,
-                    #60272b 37.5%,
-                    #2f1f23 38%,
-                    #271f22 50%,
-                    #1d1d20 50.5%,
-                    #1c1c1f 62.5%,
-                    #19191c 63%,
-                    #1d1d20 75%,
-                    #1c1d20 75.5%); */
-
-
-        backdrop-filter: blur(100px);
-
         height: 900px;
-        min-width: 320px;
-        z-index: -1;
+
+        background-image: -webkit-image-set('../img/header/glass-effect-desktop@1x.jpg');
+        background-image: image-set('../img/header/glass-effect-desktop@1x.jpg');
+
     }
 
-    /* .hero-section {
-        
-        
-            background-position: center top;
-        
-            background-size: 100% 812px;
-        
-        
-            background-repeat: no-repeat;
-            background-size: contain;
-        } */
+    @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+    screen and (min-resolution: 2dppx) and (min-width: 1440px),
+    screen and (min-devace-pixel-ratio: 2) and (min-width: 1440px) {
+        .gradient {
+            background-image: -webkit-image-set('../img/header/glass-effect-desktop@2x.jpg');
+            background-image: image-set('../img/header/glass-effect-desktop@2x.jpg');
+        }
+    }
 
     .hero-section {
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
+        height: 900px;
+        padding-top: 300px;
+        padding-bottom: 31px;
     }
-
 
 
     .hero-h1 {
         max-width: 1084px;
-        margin-top: 188px;
-        margin-bottom: 243px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-bottom: 153px;
     }
 
-
-
+    .menu-link-portfolio {
+        gap: 8px;
+    }
 
     .item-link-portfolio {
-        padding: 18px;
+        font-size: 16px;
+    }
+
+    .li-link-portfolio {
         width: 55px;
         height: 55px;
+    }
 
+    .li-email-portfolio {
+        height: 55px;
+        padding: 18px 24px;
     }
 }
