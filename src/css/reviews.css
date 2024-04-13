@@ -1,52 +1,12 @@
-
-
-body {
-    background-color: #1C1D20;
-    
+/* цим приховую not-found */
+.hide-element {
+    display: none;
 }
-
-.reviews-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    
+.not-found {
+    font-size: 40px;
+    text-align:center;
 }
-
-.swiper-wrapper {
-   width: 343px;
-   /* margin-left: 0;
-   margin-right: 0; */
-   margin-bottom: 32px;
-   /* height: 386px; */
-    
-}
-
-.swiper .swiper-slide {
-    height: 302px;
-    overflow: hidden;
-    padding: 32px 24px 32px 24px;
-    box-sizing: border-box;
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 20px;
-}
-
-@media screen and (min-width: 768px) {
-    .swiper {
-        width: 704px;
-             
-        
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .swiper {
-        width: 1376px;
-        /* margin: 164px auto;     */
-        
-    }
-}
-
+/* MOBILE */
 .reviews-title {
     font-size: 16px;
     font-weight: 600;
@@ -57,18 +17,36 @@ body {
     margin-bottom: 32px;
 }
 
-/* .swiper-slide {
+/* .reviews-container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;    
+} */
+.swiper {
+    width: 100%;
+}
+
+.swiper-wrapper {
+   display: flex;
+   width: 100%;
+   margin-bottom: 32px;    
+}
+/* тут перебиваю стилі лібки */
+.swiper .swiper-slide {
+    height: 302px;
+    overflow: auto;
     padding: 32px 24px 32px 24px;
     box-sizing: border-box;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 20px;
-    height: 302px;
-      
-
-} */
+        
+}
+/* ховаю скролбар на слайдах */
+.swiper .swiper-slide::-webkit-scrollbar {
+    display: none;
+}
 .review-img {
+    border-radius: 10px;
     margin-bottom: 32px;
 }
 
@@ -80,12 +58,12 @@ body {
 .review-author {
     
     /* Mobile/H5 */
-    color: rgb(250, 250, 250);
+    color: #fafafa;
     font-family: Inter Tight;
     font-size: 20px;
     font-weight: 600;
-    line-height: 30px;
-    letter-spacing: -2%;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
     text-align: left;
 }
 .review-text {
@@ -94,8 +72,8 @@ body {
     font-family: Inter Tight;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -2%;
+    line-height: 1.5;
+    letter-spacing: -0.02em;;
     text-align: left;
 }
 .swiper-buttons {
@@ -117,16 +95,31 @@ body {
 }
 
 .review-btn:disabled {
-    border: 1px solid #d40e0e33;
+    border: 1px solid rgba(250, 250, 250, 0.2)
     
 }
 
 .review-icon {
     
-    stroke: var(--color-white);
+    stroke: rgba(255, 255, 255, 0.5)
 
 }
 
 .review-btn:disabled .review-icon {
     stroke: #3B3B3B;
+}
+
+@media screen and (min-width: 768px) {
+    .swiper {
+        width: 704px;           
+        
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .swiper {
+        width: 1440px;
+        /* margin: 164px auto;     */
+        
+    }
 }

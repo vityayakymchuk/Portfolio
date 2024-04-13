@@ -1,28 +1,53 @@
 import { getReviwes } from "./apisRequest.js"
 import {renderReviews} from "./renderFunctions.js"
-import "./swiper.js"
+// import { updateButtons } from "./swiper.js";
+import "./swiper.js";
+import iziToast from 'izitoast';
+import "izitoast/dist/css/iziToast.min.css";
 
 
-
-
-const nextButton = document.querySelector(".button-next");
-const prevButton = document.querySelector(".button-prev");
-
-let reviews;
-
+//обробник події завантаження сторінки
 async function loaderHandler (event) {
     try {
+        //апі запит
         const response = await getReviwes ();
-        reviews = response.data
-        
+        let reviews = response.data
+        ///рендеримо Ul для слайдера на основі респонса
         renderReviews(reviews)
+        
+
       
         
     }
     catch (error) {
-        console.log (error)
+        document.querySelector(".swiper").classList.add("hide-element")
+        document.querySelector(".not-found").classList.remove("hide-element")
+        document.querySelector(".button-prev button").disabled = true
+        document.querySelector(".button-next button").disabled = true
+
+        iziToast.show({
+            color: 'orange',
+            message: `${error}`,
+            position: 'topCenter',
+            timeout: 3000,
+          });
+
     }
 }
 
-document.addEventListener('DOMContentLoaded', loaderHandler);
+// document.addEventListener('DOMContentLoaded', loaderHandler);
+
+let observer = new IntersectionObserver ((entries, observer) => {
+    entries.forEach (entry => {
+        
+        if(entry.isIntersecting) {
+            loaderHandler();                       
+            observer.unobserve(entry.target);
+        }
+    })
+});
+
+let section = document.querySelector(".reviews");
+
+observer.observe(section);
 
