@@ -10,7 +10,7 @@
     margin-bottom: 25px;
   }
   .marquee {
-    background-image: url('../img/Cover/Rectangle1_3_mobile.jpg');
+    background-image: url('../img/Cover/mobile.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -35,6 +35,7 @@
   }
 
   .marquee {
+    height: 508px;
     position: absolute;
     right: -800px;
     left: 0;
@@ -46,7 +47,6 @@
   }
 
   .marquee__inner {
-    height: 100%;
     display: flex;
     transform: rotate(16deg);
   }
@@ -82,10 +82,11 @@
     max-width: 768px;
   }
   .marquee {
-    background-image: url('../img/Cover/Rectangle_tablet13.jpg');
+    background-image: url('../img/Cover/tablet.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 960px;
   }
   .is-active {
     width: 514px;
@@ -102,7 +103,7 @@
     height: 960px;
   }
   .marquee {
-    background-image: url('../img/Cover/Rectangle_desktop_13.jpg');
+    background-image: url('../img/Cover/desktop.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
