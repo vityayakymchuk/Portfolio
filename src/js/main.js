@@ -1,1 +1,1 @@
-import { isInViewport, setAnimation, page, pageDocument } from './covers.js';
+//import { isInViewport, setAnimation, page, pageDocument } from './covers.js';
