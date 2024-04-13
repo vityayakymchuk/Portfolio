@@ -5,20 +5,17 @@ body {
 /* Main CSS */
 
 .footer {
-  margin-top: 32px;
   position: relative;
 }
 
 .footer-container {
-  position: relative;
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .work-together {
-  margin-bottom: 64px;
+  margin-bottom: 18px; /* тут розмір йде не до форми, а до кнопки Send */
 }
 
 .footer-img {
@@ -44,7 +41,6 @@ body {
 
 .footer-form {
   width: 100%;
-  margin-bottom: 64px;
 }
 
 .form-fields {
@@ -115,6 +111,7 @@ input[type='email'] {
   line-height: 1.18;
   letter-spacing: -0.02em;
   padding: 40px 32px;
+  margin-bottom: 64px;
 }
 
 .send-form-btn:hover,
@@ -124,7 +121,10 @@ input[type='email'] {
 
 .footer-links {
   display: flex;
+  align-items: center;
+  text-align: center;
   gap: 4px;
+  margin-bottom: 32px;
 }
 
 .link {
