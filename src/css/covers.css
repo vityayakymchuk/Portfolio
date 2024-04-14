@@ -57,10 +57,19 @@
   }
 
   .marquee__inner {
+    position: relative;
+    top: -200px;
     display: flex;
     transform: rotate(16deg);
   }
-
+  /*================================================*/
+  .animate {
+    animation-name: marqueeLine;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  /*================================================*/
   .marquee__line {
     flex-shrink: 0;
     margin-right: 20px;
@@ -68,12 +77,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    white-space: nowrap;
     animation-name: marqueeLine;
     animation-duration: 15s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    white-space: nowrap;
   }
 
   @keyframes marqueeLine {
