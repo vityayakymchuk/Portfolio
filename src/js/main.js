@@ -13,3 +13,5 @@ import {
   listenerInTabletOrDesktopOff,
   menuClosedTablAndDeskt,
 } from './header-modal';
+
+import './covers.js';
