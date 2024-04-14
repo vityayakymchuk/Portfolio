@@ -98,7 +98,6 @@
 
 @media screen and (min-width: 768px) {
   .js_enable_animation {
-    width: 768px;
     height: 960px;
   }
   /*===========================================*/
@@ -127,7 +126,7 @@
     margin-bottom: 45px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .js_enable_animation {
     width: 1440px;
     height: 960px;
