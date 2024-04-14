@@ -1,8 +1,8 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+}
 
 body {
   background-color: var(--color-dark);
@@ -10,6 +10,7 @@ body {
 .footer-container {
   width: 100%;
   flex-direction: column;
+  margin-left: 16px;
 }
 
 .footer-img {
@@ -22,8 +23,8 @@ body {
 
 .footer-title {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 10px;
+  margin-top: 96px;
+  margin-bottom: 8px;
   white-space: nowrap;
 }
 
@@ -34,7 +35,6 @@ body {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--color-white);
-  /* margin-bottom: 18px; */
 }
 
 .footer-paragraph-bottom {
@@ -44,6 +44,7 @@ body {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--color-white);
+  margin-bottom: 63px;
 }
 
 .color-text {
@@ -55,21 +56,18 @@ body {
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
-  column-gap: 86px;
+  /* column-gap: 86px; */
 }
 
 .form-fields {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 64px;
   margin-bottom: 32px;
-  column-gap: 32px;
-  /* margin-top: 64px; */
 }
 
 .form-input {
-  position: relative;
+  /* position: relative; */
   outline: transparent;
   background-color: transparent;
   border: none;
@@ -80,6 +78,11 @@ body {
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
   width: 100%;
+}
+
+input::placeholder {
+  position: absolute;
+  bottom: 20px;
 }
 
 .form-input:focus {
@@ -105,7 +108,7 @@ body {
   line-height: 1.18;
   letter-spacing: -0.02em;
   padding: 40px 32px;
-  margin-top: 18px;
+  margin-bottom: 64px;
 }
 
 .send-form-btn:hover,
@@ -118,7 +121,6 @@ body {
   column-gap: 8px;
   display: flex;
   white-space: nowrap;
-  margin-top: 64px;
   margin-bottom: 32px;
 }
 
@@ -262,7 +264,7 @@ body {
 @media screen and (min-width: 1440px) {
 
   .footer {
-    margin-top: 82px;
+    margin-top: 80px;
   }
   .footer::before {
     left: 1040px;
