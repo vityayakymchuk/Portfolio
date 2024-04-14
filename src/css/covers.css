@@ -4,16 +4,26 @@
     padding-left: 0;
     padding-right: 0;
   }
-
-  .marquee__line {
-    margin-right: 25px;
-    margin-bottom: 25px;
+  .is-active {
+    width: 282px;
+    height: 162px;
   }
+  /*===============================*/
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .marquee {
+      background-image: url('../img/Cover/mobile_2x.png');
+    }
+  }
+  /*===============================*/
+
   .marquee {
+    width: 100%;
     background-image: url('../img/Cover/mobile.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
 
     /* max-width: 375px;*/
     margin-left: auto;
@@ -36,7 +46,7 @@
 
   .marquee {
     height: 508px;
-    position: absolute;
+    position: relative;
     right: -800px;
     left: 0;
     overflow: hidden;
@@ -53,15 +63,15 @@
 
   .marquee__line {
     flex-shrink: 0;
-    margin-right: 25px;
-    margin-bottom: 25px;
+    margin-right: 15px;
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     white-space: nowrap;
     animation-name: marqueeLine;
-    animation-duration: 5s;
+    animation-duration: 15s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
   }
@@ -77,12 +87,23 @@
   }
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .js_enable_animation {
-    max-width: 768px;
+    width: 768px;
+    height: 960px;
   }
+  /*===========================================*/
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .marquee {
+      background-image: url('../img/Cover/tablet_2x.png');
+    }
+  }
+  /*===========================================*/
   .marquee {
     background-image: url('../img/Cover/tablet.png');
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -93,8 +114,8 @@
     height: 314px;
   }
   .marquee__line {
-    margin-right: 45px;
-    margin-bottom: 45px;
+    margin-right: 35px;
+    margin-bottom: 35px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -102,6 +123,14 @@
     width: 1440px;
     height: 960px;
   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .marquee {
+      background-image: url('../img/Cover/desktop_2x.png');
+    }
+  }
+
   .marquee {
     background-image: url('../img/Cover/desktop.png');
     background-size: cover;
@@ -113,121 +142,7 @@
     height: 314px;
   }
   .marquee__line {
-    margin-right: 65px;
-    margin-bottom: 65px;
+    margin-right: 55px;
+    margin-bottom: 55px;
   }
 }
-/* @media screen and (min-width: 320px) and (max-width: 767px) {
-  .js_enable_animation {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 32px;
-    height: 508px;
-  }
-  .marquee__line {
-    margin-right: 25px;
-    margin-bottom: 25px;
-  }
-  .marquee {
-    background-image: url('../img/Cover/Rectangle1_3_mobile.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    right: -800px;
-    left: 0;
-    overflow: hidden;
-    font-family: 'Pridi', sans-serif;
-    font-weight: 600;
-    font-size: 34px;
-    text-transform: uppercase;
-  }
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  .marquee__inner {
-    display: flex;
-    transform: rotate(16deg);
-    height: 100%;
-  }
-  .marquee__line {
-    flex-shrink: 0;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    animation-name: marqueeLine;
-    animation-duration: 14s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-  }
-  @keyframes marqueeLine {
-    from {
-      transform: translateX(-20%);
-    }
-    to {
-      transform: translateX(-180%);
-    }
-  }
-}
-
-@media screen and (min-width: 786px) {
-  .js_enable_animation {
-    height: 960px;
-  }
-  .js_enable_animation {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 48px;
-  }
-  .marquee {
-    background-image: url('../img/Cover/Rectangle_tablet13.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .is-active {
-    width: 514px;
-    height: 314px;
-  }
-  .marquee__line {
-    margin-right: 45px;
-    margin-bottom: 45px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .js_enable_animation {
-    width: 1440px;
-    height: 960px;
-  }
-  .marquee {
-    background-image: url('../img/Cover/Rectangle_desktop_13.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .is-active {
-    width: 514px;
-    height: 314px;
-  }
-  .marquee__line {
-    margin-right: 65px;
-    margin-bottom: 65px;
-  }
-} */
