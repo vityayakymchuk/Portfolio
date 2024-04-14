@@ -15,7 +15,9 @@
   <title>Portfolio</title>
   
   <script type="module" crossorigin src="/Portfolio/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/Portfolio/assets/index-38362f7b.css">
+  <link rel="modulepreload" crossorigin href="/Portfolio/assets/vendor-247c461d.js">
+  <link rel="stylesheet" href="/Portfolio/assets/vendor-34758dd7.css">
+  <link rel="stylesheet" href="/Portfolio/assets/index-7fc930bc.css">
 </head>
 
 <body>
@@ -545,7 +547,39 @@
 </section>
 
 <!-- <script type="module" src="./script.js"></script> -->
+    <section class="reviews">
+    <div class="container reviews-container">
+        <h2 class="reviews-title">Reviews</h2>
+        <!-- текст про те що не знайдено елементи якщо буде помилка від апі -->
+        <p class="hide-element not-found">Not found<p>
+        <div class="swiper mySwiper">
+            <ul class="swiper-wrapper reviews-ul">      
+
+                
+            </ul>
+            <div class="swiper-buttons">
+                <div class="button-prev">
+                    <button aria-label="next-review" class="review-btn" type="button">
+                        <svg class="review-icon" width="24px" height="24px">
+                            <use  href="/Portfolio/assets/sprite-857690e6.svg#icon-right-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="button-next">
+                    <button aria-label="next-review" class="review-btn" type="button">
+                        <svg class="review-icon" width="24px" height="24px">
+                            <use class="review-arrow" href="/Portfolio/assets/sprite-857690e6.svg#icon-left-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>   
+        </div>
+    </div>
     
+</section>
+
+
   </main>
   
   <!-- ========================= Backdrop =========================-->
