@@ -30,7 +30,7 @@ function isPartiallyInViewport(element) {
 
 function animateElementOnScroll() {
   const covers = document.querySelector('#covers');
-  const animateElements = document.querySelectorAll('.marquee-line');
+  const animateElements = document.querySelectorAll('.marquee__line');
 
   window.addEventListener('scroll', function () {
     if (isPartiallyInViewport(covers)) {
