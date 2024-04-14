@@ -5,88 +5,62 @@ body {
 /* Main CSS */
 
 .footer {
-  position: relative;
+  /* position: relative; */
 }
 
 .footer-container {
-  display: flex;
   flex-direction: column;
-  position: relative;
-}
-
-.work-together {
-  margin-bottom: 18px; /* тут розмір йде не до форми, а до кнопки Send */
+  position: relativ;
 }
 
 .footer-img {
+  display: block;
   float: left;
-  margin-right: 8px;
-  width: 44px;
-  height: 44px;
-  border-radius: 24px;
+}
+
+.footer-title {
+  margin-bottom: 10px;
 }
 
 .footer-paragraph {
-  font-size: 40px;
   font-weight: 500;
-  line-height: normal;
+  font-size: 64px;
+  line-height: 1;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--color-white);
+  margin-bottom: 18px;
 }
 
-.coloured-text {
+.color-text {
   color: var(--color-btn);
 }
 
 .footer-form {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 86px;
 }
 
 .form-fields {
-  position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 44px;
-  margin-bottom: 32px;
-}
-
-.form-fields::after {
-  position: absolute;
-  top: 37px;
-  left: 0;
-
-  content: attr(data-status);
-  color: var(--status-color);
-  font-size: 14px;
+  column-gap: 32px;
 }
 
 .form-input {
+  width: 390px;
+  height: 44px;
+  position: relative;
   outline: transparent;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   font-size: 16px;
   font-weight: 500;
+  line-height: 1.5;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
-  padding-bottom: 15px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-#user-email.valid {
-  border-bottom: 1px solid var(--color-green);
-}
-
-#user-email.invalid {
-  border-bottom: 1px solid var(--color-red);
-}
-
-.form-input::placeholder {
-  position: absolute;
-  top: 0;
-  left: 0;
+  padding-bottom: 20px;
 }
 
 .form-input:focus {
@@ -96,8 +70,10 @@ body {
   color: var(--color-white);
 }
 
-input[type='email'] {
-  text-transform: lowercase;
+.form-input::placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .send-form-btn {
@@ -105,13 +81,11 @@ input[type='email'] {
   border-radius: 50%;
   background-color: var(--color-btn);
   color: var(--color-white);
-  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: -0.02em;
   padding: 40px 32px;
-  margin-bottom: 64px;
 }
 
 .send-form-btn:hover,
@@ -121,21 +95,17 @@ input[type='email'] {
 
 .footer-links {
   display: flex;
-  align-items: center;
-  text-align: center;
-  gap: 4px;
-  margin-bottom: 32px;
+  column-gap: 8px;
 }
 
 .link {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  padding: 10px 12px;
+  padding: 18px 32px;
   color: var(--color-white);
-  font-family: inherit;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.21;
   letter-spacing: -0.02em;
 }
 
@@ -144,6 +114,7 @@ input[type='email'] {
   border: 1px solid var(--color-white);
 }
 
+/* -------------------------------Модалка------------------------------------------ */
 .backdrop {
   width: 100%;
   height: 100%;
