@@ -1,0 +1,146 @@
+.header {
+    position: absolute;
+    top: 32px;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-image: inherit;
+}
+
+/* @media screen and (max-width: 375px) {
+        .header {
+            max-width: 285px;
+        }
+    } */
+
+.img-and-name {
+    display: flex;
+    gap: 8px;
+}
+
+.header-img {
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.header-logo {
+    width: 84px;
+    height: 19px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color: var(--color-white)
+}
+
+.header-btn-burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+
+
+
+.header-svg-burger {
+    width: 28px;
+    height: 28px;
+    stroke: var(--color-white);
+}
+
+.hidden {
+    display: none;
+}
+
+/* ================================= TABLET ================================= */
+
+
+@media screen and (min-width: 768px) {
+    .hidden {
+        display: block;
+    }
+
+    .header-btn-burger {
+        display: none;
+    }
+
+    /* .header {
+        width: 704px;
+    } */
+
+    .burger-tablet-and-desktop {
+        letter-spacing: -0.02em;
+        border: 0;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 67px;
+        height: 39px;
+
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    .click-slider-menu {
+        position: absolute;
+        opacity: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+
+        transition: opacity 250ms ease-in-out;
+    }
+
+    /* .click-slider-menu li a {
+        transition: text-underline-offset 250ms ease-in-out;
+    } */
+
+    .click-slider-menu li a:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    .click-slider-menu.is-menu {
+        opacity: 1;
+    }
+
+    .button-for-orders {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        border-radius: 60px;
+        width: 163px;
+        height: 55px;
+        background-color: var(--color-btn);
+        transition: background-color 250ms ease-in-out;
+
+        letter-spacing: -0.02em;
+    }
+
+    .button-for-orders:hover {
+        background-color: var(--color-btn-focus);
+    }
+
+
+}
+
+/* ================================= DESKTOP ================================= */
+
+@media screen and (min-width: 1440px) {
+
+    /* .header {
+        min-width: 1376px;
+    } */
+
+}
