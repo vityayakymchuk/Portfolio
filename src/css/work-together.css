@@ -4,10 +4,6 @@ body {
 
 /* Main CSS */
 
-.footer {
-  position: relative;
-}
-
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -32,7 +28,6 @@ body {
   line-height: normal;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: var(--color-white);
 }
 
 .coloured-text {
@@ -73,6 +68,7 @@ body {
   padding-bottom: 15px;
   white-space: nowrap;
   text-overflow: ellipsis;
+  padding-bottom: 20px;
 }
 
 #user-email.valid {
@@ -104,7 +100,6 @@ input[type='email'] {
   border: none;
   border-radius: 50%;
   background-color: var(--color-btn);
-  color: var(--color-white);
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -112,6 +107,8 @@ input[type='email'] {
   letter-spacing: -0.02em;
   padding: 40px 32px;
   margin-bottom: 64px;
+  width: 100px;
+  height: 100px;
 }
 
 .send-form-btn:hover,
@@ -142,6 +139,14 @@ input[type='email'] {
 .link:hover,
 .link:focus {
   border: 1px solid var(--color-white);
+}
+.mail-l {
+  width: 178px;
+  height: 37px;
+}
+.num-l {
+  width: 118px;
+  height: 37px;
 }
 
 .backdrop {
@@ -210,15 +215,10 @@ input[type='email'] {
 }
 
 @media screen and (min-width: 768px) {
-
-  .footer {
-    margin-top: 48px;
-  }
   .footer::before {
     left: 570px;
   }
   .footer-container {
-    padding-top: 80px;
     padding-bottom: 169px;
   }
   .footer-img {
@@ -231,23 +231,37 @@ input[type='email'] {
   }
   .footer-form {
     display: flex;
-    align-items: center;
+    padding-top: 18px;
+    /* align-items: center; */
     gap: 32px;
-    margin-bottom: 18px;
+    /* margin-bottom: 18px; */
   }
+
   .form-fields {
     flex-direction: row;
     gap: 32px;
     margin-bottom: 0;
+    padding-top: 46px;
   }
   .form-input {
     width: 240px;
+    height: 44px;
   }
   .send-form-btn {
-    padding: 65px 57px;
+    width: 150px;
+    height: 150px;
   }
   .footer-links {
     gap: 8px;
+    margin-bottom: 0;
+  }
+  .mail-l {
+    width: 239px;
+    height: 55px;
+  }
+  .num-l {
+    width: 173px;
+    height: 55px;
   }
   .link {
     padding: 18px 32px;
@@ -265,19 +279,13 @@ input[type='email'] {
 }
 
 @media screen and (min-width: 1440px) {
-
-  .footer {
-    margin-top: 82px;
-  }
-  .footer::before {
-    left: 1040px;
-  }
   .footer-container {
-    padding-right: 164px;
-    padding-left: 164px;
+    padding-right: 196px;
+    padding-left: 196px;
   }
   .footer-form {
     gap: 86px;
+    height: 200px;
   }
   .form-input {
     width: 390px;
