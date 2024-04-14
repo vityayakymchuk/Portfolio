@@ -63,8 +63,8 @@
 
   .marquee__line {
     flex-shrink: 0;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,8 +114,8 @@
     height: 314px;
   }
   .marquee__line {
-    margin-right: 35px;
-    margin-bottom: 35px;
+    margin-right: 45px;
+    margin-bottom: 45px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -142,7 +142,7 @@
     height: 314px;
   }
   .marquee__line {
-    margin-right: 55px;
-    margin-bottom: 55px;
+    margin-right: 65px;
+    margin-bottom: 65px;
   }
 }
