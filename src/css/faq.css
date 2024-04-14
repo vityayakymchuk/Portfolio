@@ -1,132 +1,88 @@
-/* faq_box */
+.faq-section {
+  display: flex;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
 .faq-container {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-@media screen and (min-width: 320px) {
-  .faq-container {
-    max-width: 375px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .faq-container,
-  .faq-li-styles,
-  .faq-li-hero-box-title {
-    min-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .faq-container,
-  .faq-li-styles {
-    min-width: 1440px;
-  }
-}
-.faq-container {
-  background-color: var(--color-dark);
-}
-.faq-li-styles::before {
-  content: '';
-  display: block;
-  border-bottom: 1px solid var(--color-transp-02-text);
-  margin: 20px 0px 20px 0px;
-}
-.faq-li-hero-box-title {
   font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: -0.02em;
-  color: var(--color-transp-04-text);
-  margin-bottom: 32px;
-  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0, 25);
-}
-
-.li-hero-box-gap {
+  color: rgba(250, 250, 250, 0.4);
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  margin-right: 101px;
-}
-.faq-li-hero-box {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
-  color: var(--color-white);
-  margin-bottom: 20px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 44px;
-}
-@media screen and (min-width: 768px) {
-  .faq-li-hero-box {
-    width: 704px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .faq-li-hero-box {
-    padding-right: 50px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 768px) {
-  .li-main-part {
-    display: flex;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    flex-direction: row;
-    padding-right: 32px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .li-main-part {
-    padding-right: 50pxpx;
-  }
-}
-.li-main-part {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 44px;
-}
-.faq-li-second-box {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
-  color: var(--color-transp-04-text);
-}
-.arrow-btn {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: row;
-  gap: 10px;
-  border: 1px solid var(--border-color);
-  border-radius: 100%;
-  padding: 7px;
-  min-width: 34px;
-  min-height: 34px;
-
-  background-color: transparent;
+  flex-direction: column;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 12px;
+  gap: 12px;
 }
-.arrow-icon {
-  stroke: var(--color-white);
-  width: 10px;
-  height: 10px;
+
+.faq-title {
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 343px;
+}
+
+.faq-content-div-header {
+  font-size: 20px;
+  max-width: 265px;
+}
+
+.faq-content-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.faq-content-div-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  padding: 7px;
+  width: 34px;
+  height: 34px;
+  background: transparent;
+}
+
+.faq-content-div-svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.faq-content-text {
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.faq-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-bar-svg {
+  stroke-width: 1px;
+  stroke: rgba(250, 250, 250, 0.2);
+  margin: 20px 0;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.add-b {
+  display: none;
+}
+
+.faq-list-item:nth-child(even) {
+  padding-right: 20px;
 }
