@@ -1,3 +1,4 @@
+
 import { getReviwes } from "./apisRequest.js"
 import {renderReviews} from "./renderFunctions.js"
 // import { updateButtons } from "./swiper.js";
@@ -50,4 +51,22 @@ let observer = new IntersectionObserver ((entries, observer) => {
 let section = document.querySelector(".reviews");
 
 observer.observe(section);
+
+import {
+  btn,
+  closeMobileMenu,
+  closeTablAndDeskMenu,
+  modalOn,
+  modalOff,
+  modalOnMenu,
+  modalOffMenu,
+  listenerOn,
+  listenerOff,
+  menuClosed,
+  listenerInTabletOrDesktopOn,
+  listenerInTabletOrDesktopOff,
+  menuClosedTablAndDeskt,
+} from './header-modal';
+
+import './covers.js';
 
