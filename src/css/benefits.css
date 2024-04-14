@@ -63,7 +63,7 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .double {
     min-width: 768px;
   }
 
@@ -97,19 +97,15 @@ li {
 }
 
 @media screen and (min-width: 1440px) {
-  .container {
+  .double {
     display: flex;
     min-width: 1440px;
     justify-content: space-between;
-    /* margin-left: 0;
-    margin-right: 0; */
   }
   .benefits-a {
     margin-top: 64px;
   }
   .benefits-ul {
     width: 680px;
-  }
-  .benefits-section {
   }
 }
