@@ -73,10 +73,10 @@
     padding: 100px 16px;
   }
   
-  .project-img {
+  /* .project-img {
    width: 100%;
-  }
-
+  } */
+  
 .arrows {
     display: flex;
   justify-content: center;
@@ -84,7 +84,7 @@
   gap: 12px;
 }
 
-.arrow-btn {
+/* .arrow-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,7 +94,7 @@
     height: 52px;
     background-color: transparent;
     border: 1px solid var(--color-transp-02-text);
-  }
+  } */
   
   .arrow-icon {
     width: 24px;
@@ -161,3 +161,20 @@
     }
     
   }
+/* Правки від Намла */
+
+.projects-list-item {
+  padding: 100px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-list-item {
+    padding: 120px 45px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .projects-list-item {
+    padding: 120px 37px;
+  }
+}
