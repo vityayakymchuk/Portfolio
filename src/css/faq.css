@@ -38,10 +38,15 @@
 }
 
 .faq-title {
+  /* color: #fafafa;
+  font-size: 20px;
+  max-width: 265px;
+  height: auto; */
   color: #fafafa;
   font-size: 20px;
   max-width: 265px;
-  height: auto;
+  width: 100%;
+  flex-grow: 1;
 }
 
 .faq-btn {
