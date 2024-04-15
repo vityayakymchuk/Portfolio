@@ -17,8 +17,8 @@ document.addEventListener('click', function (event) {
   const svgUse = clickedButton.querySelector('use');
 
   if (clickedLi.classList.contains('is-active')) {
-    svgUse.setAttribute('href', '../img/faq-svg/faq.svg#icon-arrow-up');
+    svgUse.setAttribute('href', '../img/sprite.svg#icon-accordian-up');
   } else {
-    svgUse.setAttribute('href', '../img/faq-svg/faq.svg#icon-arrow-down');
+    svgUse.setAttribute('href', '../img/sprite.svg#icon-accordian-down');
   }
 });
