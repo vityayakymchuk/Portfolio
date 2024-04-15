@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Portfolio/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="/Portfolio/assets/index-2abf338b.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/Portfolio/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <title>Portfolio</title>
-  
-  <script type="module" crossorigin src="/Portfolio/commonHelpers.js"></script>
-  <link rel="modulepreload" crossorigin href="/Portfolio/assets/vendor-247c461d.js">
-  <link rel="stylesheet" href="/Portfolio/assets/vendor-34758dd7.css">
-  <link rel="stylesheet" href="/Portfolio/assets/index-701a99b8.css">
-</head>
-
-<body>
-  <header class="header">
+  <body>
+    <header class="header">
   <div class="container header-container">
     <div class="img-and-name">
       <img
@@ -62,8 +64,8 @@
   </div>
 </header>
 
-  <main>
-    <section class="hero-section">
+    <main>
+      <section class="hero-section">
   <div class="container">
     <div class="gradient"></div>
 
@@ -114,7 +116,7 @@
   </div>
 </section>
 
-    <section class="section-about-me" id="about-me">
+      <section class="section-about-me" id="about-me">
   <div class="container">
     <h2 class="visually-hidden">About me</h2>
     <div class="about-me-container">
@@ -253,7 +255,7 @@
   </div>
 </section>
 
-    <section class="benefits-section">
+      <section class="benefits-section">
   <div class="container double">
     <h2 class="benefits-title">BENEFITS OF WORKING WITH ME</h2>
     <div>
@@ -327,7 +329,7 @@
     </div>
   </div>
 </section>
-    <section class="projects">
+      <section class="projects">
   <div class="container">
     <h2 class="projects-title">Projects</h2>
     <div class="projects-sections">
@@ -402,8 +404,138 @@
   </div>
 </section>
 
-    
-    <section class="js_enable_animation" id="covers">
+      <section class="faq-section" id="faq">
+  <div class="container">
+    <h2 class="faq-title">FAQ</h2>
+    <ul class="faq-list-accordion-container">
+      <li class="ac">
+        <div class="faq-content-div-accordion">
+          <div class="popo">
+            <h3 class="ac-header">
+              What programming languages ​​are most often used in your project?
+            </h3>
+            <button type="button" class="ac-trigger">
+              <svg class="accordion-about-me-svg">
+                <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="ac-panel">
+          <p class="ac-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="ac">
+        <div class="faq-content-div-accordion">
+          <div class="popo">
+            <h3 class="ac-header">What are the deadlines for the project?</h3>
+            <button type="button" class="ac-trigger">
+              <svg class="faq-content-div-svg">
+                <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordion-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="ac-panel">
+          <p class="ac-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="ac">
+        <div class="faq-content-div-accordion">
+          <div class="popo">
+            <h3 class="ac-header">What payment methods do you accept?</h3>
+            <button type="button" class="ac-trigger">
+              <svg class="faq-content-div-svg">
+                <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordion-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+      <li class="ac">
+        <div class="faq-content-div-accordion">
+          <div class="popo">
+            <h3 class="ac-header">How can I contact you?</h3>
+            <button type="button" class="ac-trigger">
+              <svg class="faq-content-div-svg">
+                <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordion-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="ac-panel">
+          <p class="ac-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="ac">
+        <div class="faq-content-div-accordion">
+          <div class="popo">
+            <h3 class="ac-header">Do you provide advice or support?</h3>
+            <button type="button" class="ac-trigger">
+              <svg class="faq-content-div-svg">
+                <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordion-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="ac-panel">
+          <p class="ac-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="ac">
+        <div class="faq-content-div-accordion">
+          <div class="popo">
+            <h3 class="ac-header">
+              What does the process of developing a software product look like
+              from idea to implementation?
+            </h3>
+            <button type="button" class="ac-trigger">
+              <svg class="faq-content-div-svg">
+                <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordion-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="js_enable_animation" id="covers">
   <h2 class="cover_is_active visually-hidden">Cover</h2>
   <div class="marquee">
     <ul class="marquee__inner">
@@ -856,7 +988,7 @@
 
 <!-- <script type="module" src="./script.js"></script> -->
 
-    <section class="reviews">
+      <section class="reviews">
     <div class="container reviews-container">
         <h2 class="reviews-title">Reviews</h2>
         <!-- текст про те що не знайдено елементи якщо буде помилка від апі -->
@@ -889,8 +1021,8 @@
 </section>
 
 
-  </main>
-  <footer class="footer" id="work-together">
+    </main>
+    <footer class="footer" id="work-together">
   <div class="container footer-container">
     <div class="work-together">
       <img
@@ -955,7 +1087,7 @@
   </div>
 </div>
 
-  <!-- ========================= Backdrop =========================-->
+    <!-- ========================= Backdrop =========================-->
 <div class="mobile-menu-wrapper" data-menu>
 
     <div class="gradient-modal"></div>
@@ -993,9 +1125,8 @@
     </div>
 </div>
 <!--========================= /Backdrop ========================= -->
-  <!-- Комент -->
+    <!-- Комент -->
 
-  
-</body>
-
+    <!-- <script type="module" src="./js/main.js"></script> -->
+  </body>
 </html>
