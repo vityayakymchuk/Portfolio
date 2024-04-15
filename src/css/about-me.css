@@ -98,11 +98,9 @@ div.about-me-container .accordion-about-me {
   width: 36px;
   height: 36px;
   border: 1px solid var(--border-color);
-  border-radius: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
   top: 0;
   right: 0;
   gap: 10px;
@@ -115,6 +113,7 @@ div.about-me-container .accordion-about-me {
   height: 18px;
   fill: none;
   stroke: var(--color-white);
+  stroke-width: 2px;
 }
 .swiper-slide-about {
   display: flex;
