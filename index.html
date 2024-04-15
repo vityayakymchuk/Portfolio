@@ -17,7 +17,7 @@
   <script type="module" crossorigin src="/Portfolio/commonHelpers.js"></script>
   <link rel="modulepreload" crossorigin href="/Portfolio/assets/vendor-247c461d.js">
   <link rel="stylesheet" href="/Portfolio/assets/vendor-34758dd7.css">
-  <link rel="stylesheet" href="/Portfolio/assets/index-a9c282d5.css">
+  <link rel="stylesheet" href="/Portfolio/assets/index-bb27e3b8.css">
 </head>
 
 <body>
@@ -114,7 +114,145 @@
   </div>
 </section>
 
-    
+    <section class="section-about-me" id="about-me">
+  <div class="container">
+    <h2 class="visually-hidden">About me</h2>
+    <div class="about-me-container">
+      <div class="title-with-photo">
+        <div class="title">
+          <p class="title-text">
+            I work with people all over the world to create impressive and
+            <span class="title-functional">functional</span>
+            <span class="title-websites">websites</span> that reflect each
+            client's unique personality.
+          </p>
+        </div>
+        <picture class="photo-about-me">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/Portfolio/assets/image_desc_x1-0d285f32.jpg 1x, /Portfolio/assets/image_desc_x2-f8de89c4.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/Portfolio/assets/image_tablet_x1-b02abb79.jpg 1x, /Portfolio/assets/image_tablet_x2-1ceabbde.jpg 2x"
+          />
+          <source
+            media="(max-width:767px)"
+            srcset="/Portfolio/assets/image_mob_x1-8e2caa93.jpg 1x, /Portfolio/assets/image_mob_x2-02c07e36.jpg 2x"
+          />
+          <img
+            class="about-image"
+            src="./img/about-me/image_mob_x1.jpg 1x,"
+            alt="photo_of_me"
+          />
+        </picture>
+      </div>
+
+      <!-----------ACCORDION---------->
+      <div class="accordion-about-me">
+        <ul class="accordion-list">
+          <li class="accordion-item">
+            <div class="bla">
+              <h3 class="accordion-item-title">About me</h3>
+
+              <button class="accordion-button-up-down" type="button">
+                <svg class="accordion-about-me-svg">
+                  <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="ac-panel-items-descr">
+              <p class="ac-item-text">
+                I am Lloyd Jefferson, a talented programmer with extensive
+                expertise in software development. I have an understanding of
+                different programming languages and technologies, always ready
+                to improve my skills. I always follow the latest trends and look
+                for unconventional, creative solutions to problems. I have a
+                high level of analytical skills and am able to effectively solve
+                even the most difficult tasks encountered on the way.
+              </p>
+              <p class="ac-item-text">
+                Able to work both independently and in a team. I can effectively
+                cooperate with colleagues, exchanging ideas and finding optimal
+                solutions. Professional maturity allows you to calmly cope with
+                challenges and stressful situations, while maintaining a high
+                quality of work. I am always looking for opportunities for
+                self-improvement. I actively study new technologies and
+                practices to stay abreast of the latest innovations. I have a
+                strong understanding of various programming languages,
+                frameworks and architectural concepts that allow me to create
+                efficient and scalable software.
+              </p>
+            </div>
+          </li>
+
+          <li class="accordion-item">
+            <div class="bla">
+              <h3 class="accordion-item-title">Role</h3>
+
+              <button class="accordion-button-up-down" type="button">
+                <svg class="accordion-about-me-svg">
+                  <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="ac-role-descr">
+              <p class="ac-item-text">Frontend development</p>
+              <p class="ac-item-text">HeadlessCMS,Wordpress</p>
+              <p class="ac-item-text">Blender(enjoy)</p>
+            </div>
+          </li>
+
+          <li class="accordion-item">
+            <div class="bla">
+              <h3 class="accordion-item-title">Education</h3>
+
+              <button class="accordion-button-up-down" type="button">
+                <svg class="accordion-about-me-svg">
+                  <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="ac-educ-descr">
+              <p class="ac-item-text">
+                2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+                York
+              </p>
+              <p class="ac-item-text">
+                2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+                School, New York
+              </p>
+              <p class="ac-item-text">
+                2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ---------------------SWIPER----------------- -->
+      <div class="swiper-container">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">HTML/CSS</li>
+          <li class="swiper-slide">JavaScript</li>
+          <!-- <li class="swiper-slide">React</li>
+                    <li class="swiper-slide">Node.js</li>
+                    <li class="swiper-slide">React Native</li>
+                    <li class="swiper-slide">Soft skills</li> -->
+        </ul>
+        <button class="swiper-button-next" aria-label="next skill">
+          <svg class="about-me-next-icon-btn">
+            <use href="/Portfolio/assets/sprite-857690e6.svg#icon-left-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
     <section class="benefits-section">
   <div class="container double">
     <h2 class="benefits-title">BENEFITS OF WORKING WITH ME</h2>
