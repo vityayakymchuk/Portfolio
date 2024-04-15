@@ -17,7 +17,6 @@
   "dependencies": {
     "accordion-js": "^3.3.4",
     "axios": "^1.6.8",
-
     "axios-mock-adapter": "^1.22.0",
     "izitoast": "^1.4.0",
     "swiper": "^11.1.1",
