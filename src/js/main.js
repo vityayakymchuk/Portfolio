@@ -69,4 +69,6 @@ import {
 } from './header-modal';
 
 import './covers.js';
+import './faq-accordion.js';
+import './faq.js';
 
