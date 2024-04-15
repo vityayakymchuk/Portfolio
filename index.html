@@ -17,7 +17,7 @@
   <script type="module" crossorigin src="/Portfolio/commonHelpers.js"></script>
   <link rel="modulepreload" crossorigin href="/Portfolio/assets/vendor-247c461d.js">
   <link rel="stylesheet" href="/Portfolio/assets/vendor-34758dd7.css">
-  <link rel="stylesheet" href="/Portfolio/assets/index-343cef5c.css">
+  <link rel="stylesheet" href="/Portfolio/assets/index-a9c282d5.css">
 </head>
 
 <body>
@@ -210,12 +210,13 @@
           >See project</a
         >
       </div>
-      <div class="projects-bottom-section">
-        <ul class="projects-list">
-          <li class="projects-list-item">
+      <div class="projects-bottom-section swiper projSwiper">
+        <ul class="projects-list swiper-wrapper">
+          <li class="projects-list-item swiper-slide">
             <picture class="project-img">
               <source
                 srcset="/Portfolio/assets/1-desktop1x-f360a989.jpg 1x, /Portfolio/assets/1-desktop2x-bc93bd38.jpg 2x"
+                
                 media="(min-width: 1440px)"
               />
               <source
@@ -229,31 +230,32 @@
               <img src="/Portfolio/assets/1-desktop1x-f360a989.jpg" alt="" />
             </picture>
           </li>
-          <!-- <li class="projects-list-item"><picture>
-        <source srcset="./img/Projects/2-desktop1x.jpg 1x, ./img/Projects/2-desktop2x.jpg 2x" media="(min-width: 1440px)" />
-        <source srcset="./img/Projects/2-tablet1x.jpg 1x, ./img/Projects/2-tablet2x.jpg 2x" media="(min-width: 768px)" />
-        <source srcset="./img/Projects/2-mobile1x.jpg 1x, ./img/Projects/2-mobile2x.jpg 2x" media="(max-width: 767px)" />
+          <li class="projects-list-item swiper-slide"><picture>
+        <source srcset="/Portfolio/assets/2-tablet1x-12e7cbf6.jpg 1x, /Portfolio/assets/2-tablet2x-21a2443c.jpg 2x" media="(min-width: 1440px)" />
+        <source srcset="/Portfolio/assets/2-tablet1x-12e7cbf6.jpg 1x, /Portfolio/assets/2-tablet2x-21a2443c.jpg 2x" media="(min-width: 768px)" />
+        <source srcset="/Portfolio/assets/2-mobile1x-627fb9fa.jpg 1x, /Portfolio/assets/2-mobile2x-b62138b4.jpg 2x" media="(max-width: 767px)" />
         <img src="../img/Projects/2-desktop1x.jpg" alt="">
     </picture>
     </li>
-    <li class="projects-list-item"><picture>
-        <source srcset="./img/Projects/3-desktop1x.jpg 1x, ./img/Projects/3-desktop2x.jpg 2x" media="(min-width: 1440px)" />
-        <source srcset="./img/Projects/3-tablet1x.jpg 1x, ./img/Projects/3-tablet2x.jpg 2x" media="(min-width: 768px)" />
-        <source srcset="./img/Projects/3-mobile1x.jpg 1x, ./img/Projects/3-mobile2x.jpg 2x" media="(max-width: 767px)" />
-        <img src="./img/Projects/3-desktop1x.jpg" alt="">
+    <li class="projects-list-item swiper-slide"><picture>
+        <source srcset="/Portfolio/assets/3-tablet1x-b8a483f5.jpg 1x, /Portfolio/assets/3-tablet2x-59579a2a.jpg 2x" media="(min-width: 1440px)" />
+        <source srcset="/Portfolio/assets/3-tablet1x-b8a483f5.jpg 1x, /Portfolio/assets/3-tablet2x-59579a2a.jpg 2x" media="(min-width: 768px)" />
+        <source srcset="/Portfolio/assets/3-mobile1x-6be38e84.jpg 1x, /Portfolio/assets/3-mobile2x-a419ef0c.jpg 2x" media="(max-width: 767px)" />
+        <img src="/Portfolio/assets/3-tablet1x-b8a483f5.jpg" alt="">
     </picture>
 
-    </li> -->
+    </li>
         </ul>
+      
       </div>
     </div>
-    <div class="arrows">
-      <button class="arrow-btn" type="button">
+    <div class="arrows swiper-buttons">
+      <button class="arrow-btn prev-btn-proj review-btn" type="button">
         <svg class="arrow-icon">
           <use href="/Portfolio/assets/sprite-857690e6.svg#icon-right-arrow"></use>
         </svg>
       </button>
-      <button class="arrow-btn" type="button">
+      <button class="arrow-btn next-btn-proj review-btn" type="button">
         <svg class="arrow-icon">
           <use href="/Portfolio/assets/sprite-857690e6.svg#icon-left-arrow"></use>
         </svg>
@@ -721,12 +723,12 @@
         <h2 class="reviews-title">Reviews</h2>
         <!-- текст про те що не знайдено елементи якщо буде помилка від апі -->
         <p class="hide-element not-found">Not found<p>
-        <div class="swiper mySwiper">
+        <div class="mySwiper swiper">
             <ul class="swiper-wrapper reviews-ul">      
 
                 
             </ul>
-            <div class="swiper-buttons">
+            <div class="swiper-buttons review-buttons">
                 <div class="button-prev">
                     <button aria-label="next-review" class="review-btn" type="button">
                         <svg class="review-icon" width="24px" height="24px">
