@@ -116,7 +116,7 @@ div.about-me-container .accordion-about-me {
   fill: none;
   stroke: var(--color-white);
 }
-.swiper-slide {
+.swiper-slide-about {
   display: flex;
   font-weight: 500;
   font-size: 16px;
@@ -130,11 +130,11 @@ div.about-me-container .accordion-about-me {
   align-items: center;
 }
 
-.swiper-slide:hover {
+.swiper-slide-about:hover {
   background-color: var(--color-btn);
   color: var(--color-white);
 }
-.swiper-container {
+.swiper-container-about {
   margin-top: 32px;
 }
 .about-me-next-icon-btn {
@@ -148,10 +148,10 @@ div.about-me-container .accordion-about-me {
   fill: none;
   width: 40px;
 }
-.swiper-container {
+.swiper-container-about {
   position: relative;
 }
-.swiper-button-next {
+.swiper-button-next-about {
   position: absolute;
   transform: translate(50%, 0);
   top: 50px;
@@ -166,7 +166,7 @@ div.about-me-container .accordion-about-me {
   pointer-events: all;
   opacity: inherit;
 }
-.swiper-wrapper {
+.swiper-wrapper-about {
   display: flex;
   flex-direction: row;
 }
@@ -190,7 +190,7 @@ div.about-me-container .accordion-about-me {
     max-width: 704px;
     height: 700px;
   }
-  .swiper-container {
+  .swiper-container-about {
     margin-top: 64px;
   }
   .accordion-button-up-down {
@@ -203,6 +203,9 @@ div.about-me-container .accordion-about-me {
   }
   .accordion-item {
     margin-top: 64px;
+  }
+  .swiper-wrapper-about {
+    padding-left: 32px;
   }
 }
 
@@ -248,7 +251,7 @@ div.about-me-container .accordion-about-me {
     margin-right: 68px;
     margin-left: auto;
   }
-  .swiper-container {
+  .swiper-container-about {
     margin-top: 96px;
   }
   .accordion-button-up-down {
