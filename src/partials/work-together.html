@@ -33,7 +33,7 @@
           placeholder="comments"
         />
       </div>
-      <button class="send-form-btn" type="submit">Send</button>
+      <button class="send-form-btn" type="submit" data-modal-open>Send</button>
     </form>
 
     <div class="footer-links">
@@ -47,9 +47,9 @@
 
 <!-- Modal is-open class -->
 
-<div class="backdrop">
-  <div class="modal is-open">
-    <button class="modal-close-btn" type="button">
+<div class="backdrop is-hidden" data-modal> 
+  <div class="modal" >
+    <button class="modal-close-btn" data-modal-close type="button">
       <svg class="modal-close-btn-icon">
         <use href="./img/sprite.svg#icon-exit"></use>
       </svg>

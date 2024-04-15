@@ -15,3 +15,5 @@ import {
 } from './header-modal';
 
 import './covers.js';
+
+import "./work-together.js"
