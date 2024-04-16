@@ -38,15 +38,9 @@
 }
 
 .faq-title {
-  /* color: #fafafa;
-  font-size: 20px;
-  max-width: 265px;
-  height: auto; */
   color: #fafafa;
   font-size: 20px;
-  max-width: 265px;
-  width: 100%;
-  flex-grow: 1;
+  max-width: 289px;
 }
 
 .faq-btn {
@@ -148,7 +142,7 @@
   content: '';
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------TABLET-----------------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
   .faq-section {
@@ -173,23 +167,17 @@
     gap: 26px;
   }
 
-  .faq-bar-svg {
-    margin-top: 24px;
-    margin-bottom: 32px;
-    width: 704px;
-  }
-
   .faq-list-item .faq-accordion-text .faq-accordion-paragraph {
     max-width: 656px;
     height: 96px;
   }
 
-  .faq-list-item.faq-title {
+  .faq-list-item .faq-title {
     margin: 0;
     padding: 0;
     color: #fafafa;
     font-size: 20px;
-    max-width: 575px;
+    max-width: 656px;
   }
 
   .faq-list-item {
@@ -198,10 +186,18 @@
   }
 }
 
+/*----------------------------------------------------DESKTOP------------------------------------------------------*/
+
 @media screen and (min-width: 1440px) {
   .faq-section {
+    width: 100%;
     padding-top: 82px;
     padding-bottom: 82px;
+  }
+
+  .faq-accordion-title {
+    width: 688px;
+    margin-bottom: 26px;
   }
 
   .faq-list {
@@ -210,101 +206,66 @@
     width: 1376px;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .faq-list-item {
-    max-width: 688px;
-    padding-right: 32px;
+    width: 100%;
+    display: block;
   }
 
-  .faq-list {
-    /* height: 640px; */
-    height: 332px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  .faq-list-item .faq-accordion-text .faq-accordion-paragraph {
+    max-width: 656px;
+    height: 77px;
   }
+
+  .faq-list-item {
+    width: 688px;
+    height: 100%;
+  }
+
+  .faq-accordion-title {
+    margin-bottom: 26px;
+  }
+
+  .faq-btn {
+    margin-right: 32px;
+  }
+
+  .faq-list-item.is-active {
+    position: relative;
+  }
+
   .faq-list .faq-list-item:first-child {
-    /* height: 186px; */
-    height: 104px;
+    height: auto;
     border-right: 1px solid rgba(250, 250, 250, 0.2);
   }
+
   .faq-list .faq-list-item:nth-child(2) {
-    /* height: 184px; */
-    height: 104px;
+    height: auto;
     border-right: 1px solid rgba(250, 250, 250, 0.2);
   }
+
   .faq-list .faq-list-item:nth-child(3) {
-    /* height: 214px; */
-    height: 124px;
+    height: auto;
     border-right: 1px solid rgba(250, 250, 250, 0.2);
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   }
+
   .faq-list .faq-list-item:nth-child(4) {
-    /* height: 186px; */
-    height: 104px;
+    height: auto;
   }
+
   .faq-list .faq-list-item:nth-child(5) {
-    /* height: 184px; */
-    height: 104px;
+    height: auto;
   }
+
   .faq-list .faq-list-item:nth-child(6) {
-    /* height: 214px; */
-    height: 124px;
+    height: auto;
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   }
 
   .faq-title {
-    max-width: 575px;
+    max-width: 574px;
   }
-
-  .faq-content {
-    gap: 26px;
-    max-width: 656px;
-  }
-
-  .faq-bar-svg {
-    margin-top: 25px;
-    margin-bottom: 35px;
-    width: 708px;
-    /* width: 688px; */
-  }
-
-  /*------------------------------------------*/
-
-  /* .faq-list-item:nth-child(even) {
-    padding-left: 20px;
-  } */
-
-  /* .s-item {
-    padding-top: 66px;
-  } */
-
-  /* .l-item {
-    padding-top: 14px;
-    padding-bottom: 40px;
-    padding-bottom: 75px;
-  } */
-
-  /* .f-bar {
-    margin-top: 48px;
-  } */
-
-  /* .ff-bar {
-    margin-top: 78px;
-    width: 1376px;
-  } */
-
-  /* .ff-item {
-    padding-bottom: 60px;
-  } */
-
-  /* .last-bar {
-    margin-bottom: 78px;
-    border: 1px solid #1c1d20;
-  } */
-
-  /* .l-bar {
-    width: 1376px;
-  } */
 }
