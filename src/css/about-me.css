@@ -83,7 +83,7 @@ div.about-me-container .accordion-about-me {
   letter-spacing: -0.02em;
 }
 
-.hidden {
+.is-hidden {
   max-height: 0;
   overflow: hidden;
 }
