@@ -7,6 +7,7 @@ import iziToast from 'izitoast';
 import "izitoast/dist/css/iziToast.min.css";
 
 
+
 //обробник події завантаження сторінки
 async function loaderHandler (event) {
     try {
@@ -73,3 +74,7 @@ import './faq-accordion.js';
 import './faq.js';
 import './modal.js';
 import './footer-form.js';
+
+// ---------------------------------------
+
+import './about-me.js';
