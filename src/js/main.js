@@ -74,6 +74,7 @@ import './faq-accordion.js';
 import './faq.js';
 import './modal.js';
 import './footer-form.js';
+import './scroll-up.js';
 
 // ---------------------------------------
 
