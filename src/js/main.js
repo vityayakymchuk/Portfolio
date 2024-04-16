@@ -71,7 +71,7 @@ import {
 
 import './covers.js';
 import './faq-accordion.js';
-import './faq.js';
+
 import './modal.js';
 import './footer-form.js';
 

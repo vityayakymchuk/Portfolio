@@ -6,6 +6,9 @@
   font-size: 40px;
   text-align: center;
 }
+.reviews {
+  margin-bottom: 96px;
+}
 /* MOBILE */
 .reviews-title {
   font-size: 16px;
@@ -15,6 +18,7 @@
   text-align: left;
   color: var(--color-transp-04-text);
   margin-bottom: 32px;
+  text-transform: uppercase;
 }
 
 /* .mySwiper {
@@ -27,13 +31,11 @@
   margin-bottom: 32px;
 }
 /* тут перебиваю стилі лібки */
-.review-slide { 
+.review-slide {
   padding: 32px 24px 32px 24px;
-  
+
   border: 1px solid var(--border-color);
   border-radius: 20px;
-  
-  
 }
 
 .review-img {
@@ -108,11 +110,17 @@
   .mySwiper {
     width: 704px;
   }
+  .reviews {
+    margin-bottom: 176px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .mySwiper {
     width: 1376px;
     /* margin: 164px auto;     */
+  }
+  .reviews {
+    margin-bottom: 252px;
   }
 }

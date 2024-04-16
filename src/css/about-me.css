@@ -1,5 +1,5 @@
 .section-about-me {
-  background-color: var(--color-dark);
+  margin-bottom: 64px;
 }
 
 /* .title-with-photo {
@@ -179,6 +179,9 @@ div.about-me-container .accordion-about-me {
 /* ------------Tablet------------- */
 
 @media screen and (min-width: 768px) {
+  .section-about-me {
+    margin-bottom: 96px;
+  }
   .title {
     padding: 64px;
     height: 700px;

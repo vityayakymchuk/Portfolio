@@ -1,13 +1,10 @@
-.faq-section {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .popo {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+.faq-section {
+  margin-bottom: 64px;
 }
 
 .faq-title {
@@ -26,7 +23,7 @@
   width: 343px;
 }
 
-.ac-header {
+.faq-header {
   color: #fafafa;
   font-size: 20px;
   max-width: 265px;
@@ -39,7 +36,7 @@
   margin-bottom: 16px;
 }
 
-.ac-trigger {
+.faq-btn {
   border: 1px solid rgba(250, 250, 250, 0.2);
   cursor: pointer;
   width: 34px;
@@ -61,7 +58,7 @@
   stroke-width: 2px;
 }
 
-.ac-text {
+.faq-text {
   font-weight: 500;
   color: rgba(250, 250, 250, 0.6);
   font-size: 16px;
@@ -81,7 +78,7 @@
 
 /* accordion ------------------------- */
 
-.ac {
+.faq-list-item {
   margin-top: 0px;
   background-color: #1c1d20;
   box-sizing: border-box;
@@ -90,7 +87,7 @@
   padding-bottom: 20px;
 }
 
-.ac .ac-header {
+.faq-list-item .faq-header {
   margin: 0;
   padding: 0;
   color: #fafafa;
@@ -98,7 +95,7 @@
   max-width: 265px;
 }
 
-.ac .ac-trigger::after {
+.faq-list-item .faq-btn::after {
   content: '';
   text-align: center;
   width: 15px;
@@ -109,28 +106,28 @@
   top: 50%;
   display: none;
 }
-.ac .ac-trigger:focus {
+.faq-list-item .faq-btn:focus {
   color: #8a8a8a;
 }
-.ac .ac-panel {
+.faq-list-item .text-block {
   overflow: hidden;
   transition-property: height, visibility;
   transition-timing-function: ease;
 }
-.ac .ac-panel .ac-text {
+.faq-list-item .text-block .faq-text {
   font-weight: 500;
   font: 16px 'Inter Tight', sans-serif;
   color: rgba(250, 250, 250, 0.6);
   padding: 0px;
   margin: 0;
 }
-.ac.js-enabled .ac-panel {
+.faq-list-item.js-enabled .text-block {
   visibility: hidden;
 }
-.ac.is-active .ac-panel {
+.faq-list-item.is-active .text-block {
   visibility: visible;
 }
-.ac.is-active > .ac-header .ac-trigger::after {
+.faq-list-item.is-active > .faq-header .faq-btn::after {
   content: '';
 }
 
@@ -139,7 +136,10 @@
     padding-top: 48px;
     padding-bottom: 48px;
   }
-  .ac-trigger {
+  .faq-section {
+    margin-bottom: 96px;
+  }
+  .faq-btn {
     width: 40px;
     height: 40px;
   }
@@ -168,19 +168,19 @@
     display: none;
   }
 
-  .ac .ac-panel .ac-text {
+  .faq-list-item .text-block .faq-text {
     max-width: 656px;
     height: 96px;
   }
 
-  .ac .ac-header {
+  .faq-list-item .faq-header {
     margin: 0;
     padding: 0;
     color: #fafafa;
     font-size: 20px;
     max-width: 575px;
   }
-  .ac {
+  .faq-list-item {
     width: 704px;
     height: 100%;
   }
@@ -200,49 +200,52 @@
     flex-wrap: wrap;
   }
 
-  .ac {
+  .faq-list-item {
     max-width: 688px;
     padding-right: 32px;
   }
 
   .faq-list-accordion-container {
-    /* height: 640px; */
-    height: 332px;
+    height: 640px;
+    /* height: 332 px; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .faq-list-accordion-container .ac:first-child {
-    /* height: 186px; */
-    height: 104px;
+  .faq-list-accordion-container .faq-list-item:first-child {
+    height: 186px;
+    /* height: 104px; */
     border-right: 1px solid rgba(250, 250, 250, 0.2);
   }
-  .faq-list-accordion-container .ac:nth-child(2) {
-    /* height: 184px; */
-    height: 104px;
+  .faq-list-accordion-container .faq-list-item:nth-child(2) {
+    height: 184px;
+    /* height: 104px; */
     border-right: 1px solid rgba(250, 250, 250, 0.2);
   }
-  .faq-list-accordion-container .ac:nth-child(3) {
-    /* height: 214px; */
-    height: 124px;
+  .faq-list-accordion-container .faq-list-item:nth-child(3) {
+    height: 214px;
+    /* height: 124px; */
     border-right: 1px solid rgba(250, 250, 250, 0.2);
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   }
-  .faq-list-accordion-container .ac:nth-child(4) {
-    /* height: 186px; */
-    height: 104px;
+  .faq-list-accordion-container .faq-list-item:nth-child(4) {
+    height: 186px;
+    padding-left: 32px;
+    /* height: 104px; */
   }
-  .faq-list-accordion-container .ac:nth-child(5) {
-    /* height: 184px; */
-    height: 104px;
+  .faq-list-accordion-container .faq-list-item:nth-child(5) {
+    height: 184px;
+    padding-left: 32px;
+    /* height: 104px; */
   }
-  .faq-list-accordion-container .ac:nth-child(6) {
-    /* height: 214px; */
-    height: 124px;
+  .faq-list-accordion-container .faq-list-item:nth-child(6) {
+    height: 214px;
+    padding-left: 32px;
+    /* height: 124px; */
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   }
 
-  .ac-header {
+  .faq-header {
     max-width: 575px;
   }
 

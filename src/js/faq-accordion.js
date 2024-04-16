@@ -1,24 +1,18 @@
-import Accordion from 'accordion-js';
-// import 'accordion-js/dist/accordion.min.css';
+const accordionBtns = document.querySelectorAll('.faq-btn');
 
-new Accordion('.faq-list-accordion-container', {
-  duration: 400,
-  showMultiple: true,
-});
+accordionBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const accordionItem = btn.closest('.faq-list-item ');
+    const accordionContent = accordionItem.querySelector('.is-hidden');
 
-document.addEventListener('click', function (event) {
-  const clickedButton = event.target.closest('.ac-trigger');
-
-  if (!clickedButton) return;
-
-  event.preventDefault();
-
-  const clickedLi = clickedButton.closest('.ac');
-  const svgUse = clickedButton.querySelector('use');
-
-  if (clickedLi.classList.contains('is-active')) {
-    svgUse.setAttribute('href', './img/sprite.svg#icon-accordian-up');
-  } else {
-    svgUse.setAttribute('href', './img/sprite.svg#icon-accordian-down');
-  }
+    if (accordionItem.classList.contains('is-active')) {
+      accordionItem.classList.remove('is-active');
+      accordionContent.style.maxHeight = 0;
+      btn.querySelector('use').setAttribute('href', './img/sprite.svg#icon-accordian-down');
+    } else {
+      accordionItem.classList.add('is-active');
+      accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+      btn.querySelector('use').setAttribute('href', './img/sprite.svg#icon-accordion-up');
+    }
+  });
 });
