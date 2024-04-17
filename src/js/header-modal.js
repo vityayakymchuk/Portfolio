@@ -36,7 +36,7 @@ function modalOff() {
 
 function modalOnMenu() {
   btn.menuInTabletsAndDesktops.classList.toggle('is-menu');
-  btn.menuInTabletsAndDesktops.style.display = 'flex';
+  // btn.menuInTabletsAndDesktops.style.display = 'flex';
 }
 
 function modalOffMenu() {
