@@ -41,6 +41,7 @@ screen and (min-devace-pixel-ratio: 2) and (max-width: 767px) {
   height: 812px;
   padding-top: 281px;
   padding-bottom: 32px;
+  margin-bottom: 64px;
 }
 
 
@@ -149,6 +150,7 @@ screen and (min-devace-pixel-ratio: 2) and (max-width: 767px) {
     width: 100%;
     padding-top: 300px;
     padding-bottom: 31px;
+    margin-bottom: 96px;
   }
 
 

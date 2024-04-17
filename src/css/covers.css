@@ -3,9 +3,10 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 64px;
   }
 
-  .is-active {
+  .is-active.tutu {
     width: 282px;
     height: 162px;
   }
@@ -92,6 +93,7 @@
 @media screen and (min-width: 768px) {
   .js_enable_animation {
     height: 960px;
+    margin-bottom: 96px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -109,7 +111,7 @@
     background-position: center;
     height: 960px;
   }
-  .is-active {
+  .is-active.tutu {
     width: 514px;
     height: 314px;
   }
@@ -137,7 +139,7 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  .is-active {
+  .is-active.tutu {
     width: 514px;
     height: 314px;
   }

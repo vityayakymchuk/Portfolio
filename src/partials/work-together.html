@@ -1,39 +1,78 @@
 <footer class="footer" id="work-together">
   <div class="container footer-container">
     <div class="work-together">
-      <img
+      <picture class="footer-img">
+        <source
+          srcset="
+            img/footer/footer-face@2x.jpg 2x,
+            img/footer/footer-face@1x.jpg 1x
+          "
+          media="(min-width: 768px)"
+          width="70"
+          height="70"
+        />
+        <source
+          srcset="
+            img/footer/footer-face-mobile@2x.jpg 2x,
+            img/footer/footer-face-mobile@1x.jpg 1x
+          "
+          media="(max-width: 767px)"
+          width="44"
+          height="44"
+        />
+        <img
+          class="footer-img"
+          src="img/footer-face@1x.jpg"
+          alt="My face"
+          width="70"
+          height="70"
+        />
+      </picture>
+      <!-- <img
         class="footer-img"
         srcset="./img/header/header-face@2x.jpg 2x"
         src="./img/header/header-face@1x.jpg"
         alt="My face"
-      />
+      /> -->
       <h2 class="footer-paragraph">
         Let’s <span class="footer-paragraph coloured-text"> work</span> <br />
         together
       </h2>
     </div>
 
-    <form class="footer-form">
+    <form class="footer-form" id="footer-form">
       <div class="form-fields">
-        <input
-          class="form-input"
-          type="email"
-          required
-          name="userEmail"
-          id="user-email"
-          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-          placeholder="clients@gmail.com"
-        />
-        <input
-          class="form-input"
-          type="text"
-          required
-          name="userComment"
-          id="user-comment"
-          placeholder="comments"
-        />
+        <label for="user-email">
+          <input
+            class="form-input"
+            type="email"
+            required
+            name="userEmail"
+            id="user-email"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            placeholder="clients@gmail.com"
+          />
+        </label>
+        <label for="user-comment">
+          <input
+            class="form-input"
+            type="text"
+            required
+            name="userComment"
+            id="user-comment"
+            placeholder="comments"
+          />
+        </label>
+        <!-- <input
+            class="form-input"
+            type="text"
+            required
+            name="userComment"
+            id="user-comment"
+            placeholder="comments"
+          /> -->
       </div>
-      <button class="send-form-btn" type="submit">Send</button>
+      <button class="send-form-btn" type="submit" id="send-btn">Send</button>
     </form>
 
     <div class="footer-links">
@@ -47,18 +86,25 @@
 
 <!-- Modal is-open class -->
 
-<div class="backdrop">
-  <div class="modal is-open">
-    <button class="modal-close-btn" type="button">
-      <svg class="modal-close-btn-icon">
+<div class="backdrop click" id="modal-open">
+  <!-- <div class="modal is-open"> -->
+  <div class="modal">
+    <button class="modal-close-btn click" type="button" id="modalBtn">
+      <svg class="modal-close-btn-icon" width="22" height="22">
         <use href="./img/sprite.svg#icon-exit"></use>
       </svg>
     </button>
-
-    <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
+    <div class="modal-text-box">
+      <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
+      <p class="modal-text">
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
+    <!-- <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
     <p class="modal-text">
       The manager will contact you shortly to discuss further details and
       opportunities for cooperation. Please stay in touch.
-    </p>
+    </p> -->
   </div>
 </div>

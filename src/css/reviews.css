@@ -6,6 +6,9 @@
   font-size: 40px;
   text-align: center;
 }
+.reviews {
+  margin-bottom: 96px;
+}
 /* MOBILE */
 .reviews-title {
   font-size: 16px;
@@ -15,30 +18,26 @@
   text-align: left;
   color: var(--color-transp-04-text);
   margin-bottom: 32px;
+  text-transform: uppercase;
 }
 
-.swiper {
+/* .mySwiper {
   width: 100%;
-}
+} */
 
-.swiper-wrapper {
-  display: flex;
-  width: 100%;
+.reviews-ul {
+  /* display: flex;
+  width: 100%; */
   margin-bottom: 32px;
 }
 /* тут перебиваю стилі лібки */
-.swiper .swiper-slide {
-  height: 302px;
-  overflow: auto;
+.review-slide {
   padding: 32px 24px 32px 24px;
-  box-sizing: border-box;
+
   border: 1px solid var(--border-color);
   border-radius: 20px;
 }
-/* ховаю скролбар на слайдах */
-.swiper .swiper-slide::-webkit-scrollbar {
-  display: none;
-}
+
 .review-img {
   border-radius: 10px;
   margin-bottom: 32px;
@@ -58,6 +57,7 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   text-align: left;
+  /* height: 30px; */
 }
 .review-text {
   /* Mobile/Main text */
@@ -68,8 +68,13 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   text-align: left;
+  overflow: auto;
+  height: 120px;
 }
-.swiper-buttons {
+.review-text::-webkit-scrollbar {
+  width: 0;
+}
+.review-buttons {
   display: flex;
   flex-direction: row;
   gap: 12px;
@@ -102,14 +107,20 @@
 }
 
 @media screen and (min-width: 768px) {
-  .swiper {
+  .mySwiper {
     width: 704px;
+  }
+  .reviews {
+    margin-bottom: 176px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .swiper {
+  .mySwiper {
     width: 1376px;
     /* margin: 164px auto;     */
+  }
+  .reviews {
+    margin-bottom: 252px;
   }
 }
