@@ -5,6 +5,8 @@ const btn = {
   menuInTabletsAndDesktops: document.querySelector('.click-slider-menu'),
   close: document.querySelector('.close-btn-backdrop'),
 
+  modalBtnTravelForm: document.querySelector('.btn-order-the-project'),
+
   ulModalList: document.querySelector('.header-menu-wrapper'),
 };
 
@@ -16,7 +18,11 @@ function closeMobileMenu(event) {
 
 function closeTablAndDeskMenu(event) {
   // event.preventDefault();
+
   if (event.target === event.currentTarget) return;
+
+  // btn.menuInTabletsAndDesktops.style.display = 'none';
+
   modalOffMenu();
 }
 
@@ -30,10 +36,12 @@ function modalOff() {
 
 function modalOnMenu() {
   btn.menuInTabletsAndDesktops.classList.toggle('is-menu');
+  btn.menuInTabletsAndDesktops.style.display = 'flex';
 }
 
 function modalOffMenu() {
   btn.menuInTabletsAndDesktops.classList.remove('is-menu');
+  // btn.menuInTabletsAndDesktops.style.display = 'none';
 }
 
 const listenerOn = btn.burger.addEventListener('click', modalOn);
@@ -55,6 +63,11 @@ const menuClosedTablAndDeskt = btn.menuInTabletsAndDesktops.addEventListener(
   closeTablAndDeskMenu
 );
 
+const listenerModalBtnTravelForm = btn.modalBtnTravelForm.addEventListener(
+  'click',
+  modalOff
+);
+
 export {
   btn,
   closeMobileMenu,
@@ -69,4 +82,5 @@ export {
   listenerInTabletOrDesktopOn,
   listenerInTabletOrDesktopOff,
   menuClosedTablAndDeskt,
+  listenerModalBtnTravelForm,
 };

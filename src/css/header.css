@@ -79,7 +79,7 @@
         letter-spacing: -0.02em;
         border: 0;
         background-color: transparent;
-        display: flex;
+        /* display: flex; */
         justify-content: center;
         align-items: center;
         width: 67px;
@@ -92,8 +92,7 @@
     .click-slider-menu {
         position: absolute;
         opacity: 0;
-
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         gap: 4px;
@@ -101,17 +100,29 @@
         transition: opacity 250ms ease-in-out;
     }
 
+
+
     /* .click-slider-menu li a {
         transition: text-underline-offset 250ms ease-in-out;
     } */
 
+
+    .click-slider-menu.is-menu {
+        /* display: flex; */
+        opacity: 1;
+    }
+
+    .click-slider-menu.is-menu li a {
+        display: block;
+    }
+
+    .click-slider-menu li a {
+        display: none;
+    }
+
     .click-slider-menu li a:hover {
         text-decoration: underline;
         text-underline-offset: 3px;
-    }
-
-    .click-slider-menu.is-menu {
-        opacity: 1;
     }
 
     .button-for-orders {
@@ -124,7 +135,6 @@
         height: 55px;
         background-color: var(--color-btn);
         transition: background-color 250ms ease-in-out;
-
         letter-spacing: -0.02em;
     }
 
