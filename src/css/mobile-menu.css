@@ -44,7 +44,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     /* background-image: -webkit-image-set('./img/header/glass-effect-modal@1x.jpg'); */
-    background-image: url('./img/header/glass-effect-modal@1x.jpg');
+    background-image: url('../img/header/glass-effect-modal@1x.jpg');
 
     z-index: -1000;
     /* backdrop-filter: blur(100px); */
@@ -55,7 +55,7 @@
     screen and (min-devace-pixel-ratio: 2) and (max-width: 767px) {
     .gradient-modal {
       /* background-image: -webkit-image-set('./img/header/glass-effect-modal@2x.jpg'); */
-      background-image: url('./img/header/glass-effect-modal@2x.jpg');
+      background-image: url('../img/header/glass-effect-modal@2x.jpg');
     }
   }
 
