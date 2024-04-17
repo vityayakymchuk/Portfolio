@@ -20,9 +20,9 @@
     <title>Portfolio</title>
     
     <script type="module" crossorigin src="/Portfolio/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/Portfolio/assets/vendor-cc3ed862.js">
+    <link rel="modulepreload" crossorigin href="/Portfolio/assets/vendor-bf41a455.js">
     <link rel="stylesheet" href="/Portfolio/assets/vendor-fb258d76.css">
-    <link rel="stylesheet" href="/Portfolio/assets/index-7fd5a777.css">
+    <link rel="stylesheet" href="/Portfolio/assets/index-00f5f106.css">
   </head>
 
   <body>
@@ -119,20 +119,22 @@
   </div>
 </section>
 
-      <section class="section-about-me" id="about-me">
-  <div class="container">
-    <h2 class="visually-hidden">About me</h2>
-    <div class="about-me-container">
-      <div class="title-with-photo">
-        <div class="title">
-          <p class="title-text">
-            I work with people all over the world to create impressive and
-            <span class="title-functional">functional</span>
-            <span class="title-websites">websites</span> that reflect each
-            client's unique personality.
-          </p>
-        </div>
-        <picture class="photo-about-me">
+      <section class="about-me-section" id="about-me">
+  <div class="about-me-overall">
+    <h2 class="about-me-hidden-header">About me</h2>
+    <div class="container about-me-overall-description">
+      <div class="about-me-description-box">
+        <p class="about-me-description-text">
+          I work with people all over the world to create impressive and
+          <span class="about-me-description-text-red">functional</span>
+          <span class="about-me-description-text-gray">websites</span> that
+          reflect each client's unique personality.
+        </p>
+      </div>
+    </div>
+    <div class="container about-me-overall-photo">
+      <div class="about-me-description-box">
+        <picture>
           <source
             media="(min-width: 1440px)"
             srcset="/Portfolio/assets/image_desc_x1-0d285f32.jpg 1x, /Portfolio/assets/image_desc_x2-f8de89c4.jpg 2x"
@@ -142,118 +144,135 @@
             srcset="/Portfolio/assets/image_tablet_x1-b02abb79.jpg 1x, /Portfolio/assets/image_tablet_x2-1ceabbde.jpg 2x"
           />
           <source
-            media="(max-width:767px)"
+            media="(max-width: 767px)"
             srcset="/Portfolio/assets/image_mob_x1-8e2caa93.jpg 1x, /Portfolio/assets/image_mob_x2-02c07e36.jpg 2x"
           />
           <img
-            class="about-image"
+            class="about-me-description-image"
             src="./img/about-me/image_mob_x1.jpg 1x,"
-            alt="photo_of_me"
+            alt="Man with laptop"
+            loading="lazy"
           />
         </picture>
       </div>
-
-      <!-----------ACCORDION---------->
-      <div class="accordion-about-me">
-        <ul class="accordion-list">
-          <li class="accordion-item is-active">
-            <div class="bla">
-              <h3 class="accordion-item-title">About me</h3>
-
-              <button class="accordion-button-up-down" type="button">
-                <svg class="accordion-about-me-svg">
-                  <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
-                </svg>
-              </button>
-            </div>
-
-            <div class="ac-panel-items-descr is-hidden">
-              <p class="ac-item-text">
-                I am Lloyd Jefferson, a talented programmer with extensive
-                expertise in software development. I have an understanding of
-                different programming languages and technologies, always ready
-                to improve my skills. I always follow the latest trends and look
-                for unconventional, creative solutions to problems. I have a
-                high level of analytical skills and am able to effectively solve
-                even the most difficult tasks encountered on the way.
-              </p>
-              <p class="ac-item-text">
-                Able to work both independently and in a team. I can effectively
-                cooperate with colleagues, exchanging ideas and finding optimal
-                solutions. Professional maturity allows you to calmly cope with
-                challenges and stressful situations, while maintaining a high
-                quality of work. I am always looking for opportunities for
-                self-improvement. I actively study new technologies and
-                practices to stay abreast of the latest innovations. I have a
-                strong understanding of various programming languages,
-                frameworks and architectural concepts that allow me to create
-                efficient and scalable software.
-              </p>
-            </div>
-          </li>
-
-          <li class="accordion-item">
-            <div class="bla">
-              <h3 class="accordion-item-title">Role</h3>
-
-              <button class="accordion-button-up-down" type="button">
-                <svg class="accordion-about-me-svg">
-                  <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
-                </svg>
-              </button>
-            </div>
-
-            <div class="ac-role-descr is-hidden ">
-              <p class="ac-item-text">Frontend development</p>
-              <p class="ac-item-text">HeadlessCMS,Wordpress</p>
-              <p class="ac-item-text">Blender(enjoy)</p>
-            </div>
-          </li>
-
-          <li class="accordion-item">
-            <div class="bla">
-              <h3 class="accordion-item-title">Education</h3>
-
-              <button class="accordion-button-up-down" type="button">
-                <svg class="accordion-about-me-svg">
-                  <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
-                </svg>
-              </button>
-            </div>
-
-            <div class="ac-educ-descr is-hidden">
-              <p class="ac-item-text">
-                2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
-                York
-              </p>
-              <p class="ac-item-text">
-                2019 - 2020 / Advanced Web Development Certificate, GoIT IT
-                School, New York
-              </p>
-              <p class="ac-item-text">
-                2020 - 2022 / Advanced Blender Animation Techniques, Udemy
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <!-- ---------------------SWIPER----------------- -->
-      <div class="swiper-container-about">
-        <ul class="swiper-wrapper-about">
-          <li class="swiper-slide-about">HTML/CSS</li>
-          <li class="swiper-slide-about">JavaScript</li>
-          <!-- <li class="swiper-slide-about">React</li>
-                    <li class="swiper-slide">Node.js</li>
-                    <li class="swiper-slide">React Native</li>
-                    <li class="swiper-slide">Soft skills</li> -->
-        </ul>
-        <button class="swiper-button-next-about" aria-label="next skill">
-          <svg class="about-me-next-icon-btn">
-            <use href="/Portfolio/assets/sprite-857690e6.svg#icon-left-arrow"></use>
-          </svg>
-        </button>
-      </div>
+    </div>
+  </div>
+  <div class="about-me-accordion-section container">
+    <ul class="about-me-accordion-list accordion-container">
+      <li class="about-me-accordion-list-item ac">
+        <h5 class="about-me-accordion-list-item-title ac-header">
+          About me
+          <button class="accordion-list-item-button ac-trigger">
+            <svg class="accordion-list-item-icon" width="20" height="20">
+              <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
+            </svg>
+          </button>
+        </h5>
+        <p class="accordion-list-item-text ac-panel">
+          I am Lloyd Jefferson, a talented programmer with extensive expertise
+          in software development. I have an understanding of different
+          programming languages ​and technologies, always ready to improve my
+          skills. I always follow the latest trends and look for unconventional,
+          creative solutions to problems. I have a high level of analytical
+          skills and am able to effectively solve even the most difficult tasks
+          encountered on the way.
+          <span class="indented"
+            >Able to work both independently and in a team. I can effectively
+            cooperate with colleagues, exchanging ideas and finding optimal
+            solutions. Professional maturity allows you to calmly cope with
+            challenges and stressful situations, while maintaining a high
+            quality of work.I am always looking for opportunities for
+            self-improvement. I actively study new technologies and practices to
+            stay abreast of the latest innovations. I have a strong
+            understanding of various programming languages, frameworks and
+            architectural concepts that allow me to create efficient and
+            scalable software.</span
+          >
+        </p>
+      </li>
+      <li class="about-me-accordion-list-item ac">
+        <h5 class="about-me-accordion-list-item-title ac-header">
+          ROLE
+          <button class="accordion-list-item-button ac-trigger">
+            <svg class="accordion-list-item-icon" width="20" height="20">
+              <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
+            </svg>
+          </button>
+        </h5>
+        <p class="accordion-list-item-text ac-panel">
+          Frontend development
+          <span class="indented-list"> HeadlessCMS,Wordpress </span>
+          <span class="indented-list indented-list-last"> Blender(enjoy) </span>
+        </p>
+      </li>
+      <li class="about-me-accordion-list-item ac">
+        <h5 class="about-me-accordion-list-item-title ac-header">
+          EDUCATION
+          <button class="accordion-list-item-button ac-trigger">
+            <svg class="accordion-list-item-icon" width="20" height="20">
+              <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
+            </svg>
+          </button>
+        </h5>
+        <p class="accordion-list-item-text ac-panel">
+          2018 - 2019 / Frontend Development Diploma, GoIT IT
+          <span class="intended-enter"> School, New York</span>
+          <span class="indented-list">
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+            <span class="intended-enter">School, New York</span>
+          </span>
+          <span class="indented-list indented-list-last">
+            2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </span>
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class="about-me-swiper-section container">
+    <div class="swiper about-me-swiper-container">
+      <ul class="swiper-wrapper about-me-swiper-wrapper-list">
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">Soft skills</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">HTML/CSS</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">JavaScript</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">React</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">Node.js</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">React Native</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">Soft skills</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">HTML/CSS</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">JavaScript</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">React</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">Node.js</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">React Native</button>
+        </li>
+      </ul>
+    </div>
+    <div class="about-me-swiper-btn-next swiper-button-next">
+      <svg class="about-me-arrow-next" width="28" height="28">
+        <use href="/Portfolio/assets/sprite-857690e6.svg#icon-right-arrow"></use>
+      </svg>
     </div>
   </div>
 </section>
@@ -417,44 +436,46 @@
   </div>
 </section>
 
-      <section class="faq-section" id="faq">
-  <div class="container">
-    <h2 class="faq-title">FAQ</h2>
-    <ul class="faq-list-accordion-container">
-      <li class="faq-list-item is-active">
-        <div class="faq-content-div-accordion">
-          <div class="popo">
-            <h3 class="faq-header">
-              What programming languages ​​are most often used in your project?
-            </h3>
-            <button type="button" class="faq-btn">
-              <svg class="faq-content-div-svg">
+      <section class="faq-questions-section" id="FAQ">
+  <div class="container faq-container">
+    <h2 class="faq-title">faq</h2>
+    <ul class="faq-accordion-container faq-list">
+      <li class="ac faq-list-item item-1">
+        <h3 class="ac-header faq-list-item-title">
+          <button type="button" class="ac-trigger faq-btn">
+            <span class="button-text"
+              >What programming languages ​​are most often used in your project?
+            </span>
+            <span class="arrow-icon-container">
+              <svg class="arrow-icon" width="20" height="20">
                 <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
               </svg>
-            </button>
-          </div>
-        </div>
-        <div class="text-block is-hidden">
-          <p class="faq-text">
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text faq-text">
             In the field of web development, there are various technologies and
             programming languages. Typically, this includes a combination of
             frontend (client side) and backend (server side) languages.
           </p>
         </div>
       </li>
-      <li class="faq-list-item is-active">
-        <div class="faq-content-div-accordion">
-          <div class="popo">
-            <h3 class="faq-header">What are the deadlines for the project?</h3>
-            <button type="button" class="faq-btn">
-              <svg class="faq-content-div-svg">
+      <li class="ac faq-list-item item-2">
+        <h3 class="ac-header faq-list-item-title">
+          <button type="button" class="ac-trigger faq-btn">
+            <span class="button-text"
+              >What are the deadlines for the project?</span
+            >
+            <span class="arrow-icon-container">
+              <svg class="arrow-icon" width="20" height="20">
                 <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
               </svg>
-            </button>
-          </div>
-        </div>
-        <div class="text-block is-hidden">
-          <p class="faq-text">
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text faq-text">
             The terms of project implementation depend to a large extent on a
             number of factors, such as the scope of the project, its complexity,
             and the availability of resources. Determining exact deadlines is a
@@ -463,57 +484,57 @@
           </p>
         </div>
       </li>
-      <li class="faq-list-item is-active">
-        <div class="faq-content-div-accordion">
-          <div class="popo">
-            <h3 class="faq-header">What payment methods do you accept?</h3>
-            <button type="button" class="faq-btn">
-              <svg class="faq-content-div-svg">
+      <li class="ac faq-list-item item-3">
+        <h3 class="ac-header faq-list-item-title">
+          <button type="button" class="ac-trigger faq-btn">
+            <span class="button-text">What payment methods do you accept?</span>
+            <span class="arrow-icon-container">
+              <svg class="arrow-icon" width="20" height="20">
                 <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
               </svg>
-            </button>
-          </div>
-        </div>
-        <div class="text-block is-hidden">
-          <p class="faq-text">
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text faq-text">
             Payment through credit and debit cards such as Visa, MasterCard,
             specialized electronic payment systems such as PayPal, as well as
             payments in cryptocurrencies such as Bitcoin, Ethereum and others.
           </p>
         </div>
       </li>
-      <li class="faq-list-item is-active">
-        <div class="faq-content-div-accordion">
-          <div class="popo">
-            <h3 class="faq-header">How can I contact you?</h3>
-            <button type="button" class="faq-btn">
-              <svg class="faq-content-div-svg">
+      <li class="ac faq-list-item item-4">
+        <h3 class="ac-header faq-list-item-title">
+          <button type="button" class="ac-trigger faq-btn">
+            <span class="button-text">How can I contact you?</span>
+            <span class="arrow-icon-container">
+              <svg class="arrow-icon" width="20" height="20">
                 <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
               </svg>
-            </button>
-          </div>
-        </div>
-        <div class="text-block is-hidden">
-          <p class="faq-text">
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text faq-text">
             In the field of web development, there are various technologies and
             programming languages. Typically, this includes a combination of
             frontend (client side) and backend (server side) languages.
           </p>
         </div>
       </li>
-      <li class="faq-list-item is-active">
-        <div class="faq-content-div-accordion">
-          <div class="popo">
-            <h3 class="faq-header">Do you provide advice or support?</h3>
-            <button type="button" class="faq-btn">
-              <svg class="faq-content-div-svg">
+      <li class="ac faq-list-item item-5">
+        <h3 class="ac-header faq-list-item-title">
+          <button type="button" class="ac-trigger faq-btn">
+            <span class="button-text">Do you provide advice or support?</span>
+            <span class="arrow-icon-container">
+              <svg class="arrow-icon" width="20" height="20">
                 <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
               </svg>
-            </button>
-          </div>
-        </div>
-        <div class="text-block is-hidden">
-          <p class="faq-text">
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text faq-text">
             The terms of project implementation depend to a large extent on a
             number of factors, such as the scope of the project, its complexity,
             and the availability of resources. Determining exact deadlines is a
@@ -522,22 +543,22 @@
           </p>
         </div>
       </li>
-      <li class="faq-list-item is-active">
-        <div class="faq-content-div-accordion">
-          <div class="popo">
-            <h3 class="faq-header">
-              What does the process of developing a software product look like
-              from idea to implementation?
-            </h3>
-            <button type="button" class="faq-btn">
-              <svg class="faq-content-div-svg">
+      <li class="ac faq-list-item item-6">
+        <h3 class="ac-header faq-list-item-title">
+          <button type="button" class="ac-trigger faq-btn">
+            <span class="button-text"
+              >What does the process of developing a software product look like
+              from idea to implementation?</span
+            >
+            <span class="arrow-icon-container">
+              <svg class="arrow-icon" width="20" height="20">
                 <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
               </svg>
-            </button>
-          </div>
-        </div>
-        <div class="text-block is-hidden">
-          <p class="faq-text">
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text faq-text">
             Payment through credit and debit cards such as Visa, MasterCard,
             specialized electronic payment systems such as PayPal, as well as
             payments in cryptocurrencies such as Bitcoin, Ethereum and others.
