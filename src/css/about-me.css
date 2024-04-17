@@ -1,277 +1,357 @@
-.section-about-me {
-  margin-bottom: 64px;
-}
-/* k */
-
-/* .title-with-photo {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding-bottom: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 343px;
-} */
-.title {
-  display: flex;
-
-  justify-content: center;
-  border-radius: 24px;
-  height: 500px;
-  padding: 32px;
-  background-color: #242527;
-  /* Добавить в root */
-  padding-top: 32px;
-  margin-bottom: 16px;
-}
-.title-text {
-  width: 279px;
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: var(--main-text);
-  line-height: 1.17;
-  letter-spacing: -0.03em;
-}
-.title-functional {
-  color: var(--color-btn);
-}
-.title-websites {
-  color: var(--color-transp-04-text);
-}
-.about-image {
-  border-radius: 24px;
-  height: 500px;
-}
-
-div.about-me-container .accordion-about-me {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.accordion-info-about-me {
-  margin-left: auto;
-  margin-right: auto;
-  width: 343px;
-}
-.accordion-item {
-  border: none;
-  border-bottom: 1px solid #fafafa33;
-  padding-bottom: 20px;
-  background-color: transparent;
-  margin-top: 32px;
-}
-.accordion-item-title {
-  color: #fafafa66;
-  font-weight: 600;
-  text-align: left;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-}
-.bla {
-  display: flex;
-  justify-content: space-between;
-}
-.ac-panel-items-descr {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-.ac-item-text {
-  line-height: 150%;
-  letter-spacing: -0.02em;
-}
-
-.is-hidden {
-  max-height: 0;
+.about-me-hidden-header {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-.ac-role-descr {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.ac-educ-descr {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.about-me-section {
+  padding-top: 64px;
+  padding-bottom: 32px;
 }
 
-.accordion-button-up-down {
-  background-color: transparent;
+.about-me-description-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.about-me-description-text-red {
+  color: #ed3b44;
+}
+
+.about-me-description-text-gray {
+  opacity: 40%;
+}
+
+.about-me-description-box {
+  background-color: #242527;
+  height: 500px;
+  border-radius: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.about-me-overall {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.about-me-description-image {
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+/* ==================================================== ACCORDION */
+
+.about-me-accordion-section {
+  padding-top: 20px;
+  padding-bottom: 32px;
+}
+
+.about-me-accordion-list-item {
+  margin: 0;
+  padding: 0;
+}
+
+.ac .ac-header.about-me-accordion-list-item-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  padding-top: 18px;
+  transition: padding 0.4s ease;
+  margin: 0;
+  align-items: center;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.ac.js-enabled .ac-panel.accordion-list-item-text {
+  visibility: visible;
+}
+
+.ac .ac-trigger.accordion-list-item-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 36px;
   height: 36px;
-  border: 1px solid var(--border-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  right: 0;
-  gap: 10px;
-  border-radius: 100px;
-  padding: 7px;
+  margin-left: 20px;
+  border-radius: 100%;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-.accordion-about-me-svg {
-  width: 18px;
-  height: 18px;
-  fill: none;
-  stroke: var(--color-white);
-  stroke-width: 2px;
+.accordion-list-item-icon {
+  display: block;
+  flex-shrink: 0;
+  padding: 0;
+  transition: transform 0.4s;
+  stroke: #fafafa;
 }
-.swiper-slide-about {
-  display: flex;
-  font-weight: 500;
+
+.ac .accordion-list-item-button.ac-trigger::after {
+  content: none;
+}
+
+.ac .accordion-list-item-button.ac-trigger::after {
+  display: none;
+}
+
+.about-me-accordion-list-item.ac {
+  margin-top: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.about-me-accordion-list-item.ac.is-active
+  .ac-header.about-me-accordion-list-item-title {
+  padding-bottom: 16px;
+}
+
+.accordion-list-item-text {
+  color: #fafafa;
   font-size: 16px;
-  color: var(--color-white);
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  border-bottom: 1px solid transparent;
+  border-bottom-color: rgba(250, 250, 250, 0.2);
+}
+
+.indented {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.indented-list {
+  display: block;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.indented-list-last {
+  margin-bottom: 24px;
+}
+
+.is-active .accordion-list-item-icon {
+  transform: rotate(180deg);
+}
+
+/* ======================================== SWIPER */
+
+.about-me-swiper-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-me-swiper-btn {
   width: 130px;
   height: 130px;
   border-radius: 50%;
   border: 1px solid rgba(250, 250, 250, 0.2);
-  /* background-color: #242527; */
+  background-color: transparent;
+  color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+.about-me-swiper-wrapper-list.swiper-wrapper {
+  margin: 0;
+}
+
+.about-me-swiper-wrapper-list .about-me-swiper-wrapper-item {
+  width: 130px;
+}
+
+.about-me-swiper-section .swiper {
+  max-width: 260px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.swiper .about-me-swiper-container {
+  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.swiper-slide-about:hover {
-  background-color: var(--color-btn);
-  color: var(--color-white);
-}
-.swiper-container-about {
-  margin-top: 32px;
-}
-.about-me-next-icon-btn {
-  stroke: var(--color-dark-grey);
-  fill: none;
-  width: 40px;
-  height: 30px;
-}
-.about-me-next-icon-btn:hover {
-  stroke: var(--color-white);
-  fill: none;
-  width: 40px;
-}
-.swiper-container-about {
+  flex-direction: row;
   position: relative;
 }
-.swiper-button-next-about {
-  position: absolute;
-  transform: translate(50%, 0);
-  top: 50px;
-  right: 16px;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border: none;
-  overflow: hidden;
-  display: flex;
+
+.about-me-swiper-wrapper-item.swiper-slide-active {
+  background-color: #ed3b44;
   border-radius: 50%;
-  pointer-events: all;
-  opacity: inherit;
-}
-.swiper-wrapper-about {
-  display: flex;
-  flex-direction: row;
+  border: none;
 }
 
-/* ------------Tablet------------- */
+.about-me-swiper-btn-next.swiper-button-next:after {
+  content: none;
+}
+
+.about-me-swiper-btn-next {
+  transform: rotate(180deg);
+  fill: none;
+  stroke: #3b3b3b;
+}
+
+.about-me-swiper-btn-next.swiper-button-next {
+  margin-top: 0;
+  position: static;
+  width: 28px;
+  height: 28px;
+}
+
+.about-me-swiper-btn-next.swiper-button-lock {
+  display: block;
+}
+
+/* ================================= ADAPTIVE TABLET */
 
 @media screen and (min-width: 768px) {
-  .section-about-me {
-    margin-bottom: 96px;
+  .about-me-section {
+    padding-top: 64px;
+    padding-bottom: 48px;
   }
-  .title {
-    padding: 64px;
+
+  .about-me-description-text {
+    font-size: 38px;
+    line-height: 40px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .about-me-description-box {
     height: 700px;
     width: 704px;
   }
-  .title-text {
-    width: 576px;
-    font-size: 38px;
-    line-height: 105%;
-    letter-spacing: -0.03em;
+  .about-me-accordion-section {
+    padding-top: 40px;
+    padding-bottom: 64px;
   }
-
-  .about-image {
-    max-width: 704px;
-    height: 700px;
+  .ac .ac-header.about-me-accordion-list-item-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-  .swiper-container-about {
-    margin-top: 64px;
-  }
-  .accordion-button-up-down {
+  .ac .ac-trigger.accordion-list-item-button {
     width: 40px;
     height: 40px;
   }
-  .accordion-about-me-svg {
-    width: 20px;
-    height: 20px;
+  .indented {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 36px;
   }
-  .accordion-item {
-    margin-top: 64px;
+  .about-me-accordion-list-item.ac.is-active
+    .ac-header.about-me-accordion-list-item-title {
+    padding-bottom: 16px;
   }
-  .swiper-wrapper-about {
-    padding-left: 32px;
+  .indented-list-last {
+    margin-bottom: 36px;
+  }
+  .about-me-swiper-btn {
+    font-size: 20px;
+    min-width: 200px;
+    height: 200px;
+  }
+  .about-me-swiper-wrapper-list .about-me-swiper-wrapper-item {
+    min-width: 200px;
+  }
+  .about-me-swiper-btn-next.swiper-button-next {
+    width: 40px;
+    height: 40px;
+  }
+  .about-me-swiper-section .swiper {
+    max-width: 600px;
+    margin-left: 0;
   }
 }
 
+/* ======================== ADAPTIVE DESKTOP */
+
 @media screen and (min-width: 1440px) {
-  .about-me-container {
-    max-width: 1440px;
+  .about-me-section {
+    padding-top: 96px;
+    padding-bottom: 82px;
   }
-  .title-with-photo {
+  .about-me-description-text {
+    padding-left: 66px;
+    padding-right: 66px;
+  }
+  .about-me-description-box {
+    height: 700px;
+    width: 680px;
+  }
+  .about-me-overall {
     display: flex;
-    gap: 16px;
-    padding-bottom: 64px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1376px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .title {
-    padding: 64px;
-    height: 700px;
-    width: 680px;
-    align-items: flex-start;
+  .about-me-accordion-section {
+    padding-top: 72px;
+    padding-bottom: 95px;
   }
-  .title-text {
-    width: 576px;
-    font-size: 38px;
-    line-height: 105%;
-    letter-spacing: -0.03em;
+  .about-me-overall-description {
+    padding: 0;
   }
+  .about-me-overall-photo {
+    padding: 0;
+  }
+  .accordion-list-item-text {
+    padding-left: 696px;
+    padding-right: 68px;
+  }
+  .indented {
+    margin-top: 44px;
+    margin-bottom: 40px;
+  }
+  .intended-enter {
+    display: block;
+    margin-top: 4px;
+  }
+  .about-me-swiper-section {
+    justify-content: start;
+    gap: 80px;
+  }
+  .about-me-swiper-section .swiper {
+    max-width: 1200px;
+    margin-left: 32px;
+    margin-right: 0;
+  }
+}
 
-  .about-image {
-    width: 680px;
-    height: 700px;
+@media screen and (max-width: 374px) {
+  .about-me-description-box {
+    height: auto;
   }
-  .ac-educ-descr {
-    width: 612px;
-    margin-right: 68px;
-    margin-left: auto;
-  }
-  .ac-panel-items-descr {
-    width: 612px;
-    margin-right: 68px;
-    margin-left: auto;
-  }
-  .ac-role-descr {
-    width: 612px;
-    margin-right: 68px;
-    margin-left: auto;
-  }
-  .swiper-container-about {
-    margin-top: 96px;
-  }
-  .accordion-button-up-down {
-    width: 40px;
-    height: 40px;
-  }
-  .accordion-about-me-svg {
-    width: 20px;
-    height: 20px;
-  }
-  .accordion-item {
-    margin-top: 32px;
+  .about-me-swiper-section .swiper {
+    margin-right: 0;
+    margin-left: 0;
   }
 }

@@ -1,22 +1,6 @@
-const titles = document.querySelectorAll('.accordion-title');
-const contents = document.querySelectorAll('.accordion-content');
+'use strict';
 
-titles.forEach(item => item.addEventListener('click', () => {
-  const activeContent = document.querySelector('#' + item.dataset.tab);
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
-  if(activeContent.classList.contains('active')) {
-    activeContent.classList.remove('active');
-
-    activeContent.style.maxHeight = 0;
-  } else {
-    contents.forEach(element => {
-      element.classList.remove('active');
-      element.style.maxHeight = 0;
-    })
-    titles.forEach(element => element.classList.remove('active'));
-
-    item.classList.add('active');
-    activeContent.classList.add('active');
-    activeContent.style.maxHeight = activeContent.scrollHeight +'px';
-  }
-}))
+new Accordion('.faq-accordion-container');
