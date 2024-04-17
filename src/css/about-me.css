@@ -44,13 +44,11 @@
   border-radius: 24px;
   height: 500px;
 }
-
 div.about-me-container .accordion-about-me {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 .accordion-info-about-me {
   margin-left: auto;
   margin-right: auto;
@@ -83,12 +81,10 @@ div.about-me-container .accordion-about-me {
   line-height: 150%;
   letter-spacing: -0.02em;
 }
-
 .is-hidden {
   max-height: 0;
   overflow: hidden;
 }
-
 .ac-role-descr {
   display: flex;
   flex-direction: column;
@@ -99,7 +95,6 @@ div.about-me-container .accordion-about-me {
   flex-direction: column;
   gap: 10px;
 }
-
 .accordion-button-up-down {
   background-color: transparent;
   width: 36px;
@@ -114,7 +109,6 @@ div.about-me-container .accordion-about-me {
   border-radius: 100px;
   padding: 7px;
 }
-
 .accordion-about-me-svg {
   width: 18px;
   height: 18px;
@@ -135,7 +129,6 @@ div.about-me-container .accordion-about-me {
   justify-content: center;
   align-items: center;
 }
-
 .swiper-slide-about:hover {
   background-color: var(--color-btn);
   color: var(--color-white);
