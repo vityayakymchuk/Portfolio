@@ -19,7 +19,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url('./img/header/glass-effect-mobile@1x.jpg');
+  background-image: url('../img/header/glass-effect-mobile@1x.jpg');
   /* background-image: image-set('../img/header/glass-effect-mobile@1x.jpg'); */
 
   z-index: -10000;
@@ -30,7 +30,7 @@
   screen and (min-resolution: 2dppx) and (max-width: 767px),
   screen and (min-devace-pixel-ratio: 2) and (max-width: 767px) {
   .gradient {
-    background-image: url('./img/header/glass-effect-mobile@2x.jpg');
+    background-image: url('../img/header/glass-effect-mobile@2x.jpg');
     /* background-image: image-set('../img/header/glass-effect-mobile@2x.jpg'); */
   }
 }
@@ -122,14 +122,14 @@
 
     /* background-image: -webkit-image-set('../img/header/glass-effect-tablet@1x.jpg' */
     /* ); */
-    background-image: url('./img/header/glass-effect-tablet@1x.jpg');
+    background-image: url('../img/header/glass-effect-tablet@1x.jpg');
   }
 
   @media screen and (min-resolution: 192dpi) and (max-width: 1439px),
     screen and (min-resolution: 2dppx) and (max-width: 1439px),
     screen and (min-devace-pixel-ratio: 2) and (max-width: 1439px) {
     .gradient {
-      background-image: url('./img/header/glass-effect-tablet@2x.jpg');
+      background-image: url('../img/header/glass-effect-tablet@2x.jpg');
       /* background-image: image-set('../img/header/glass-effect-tablet@2x.jpg'); */
     }
   }
@@ -176,14 +176,14 @@
 
     /* background-image: -webkit-image-set('./img/header/glass-effect-desktop@1x.jpg' */
     /* ); */
-    background-image: url('./img/header/glass-effect-desktop@1x.jpg');
+    background-image: url('../img/header/glass-effect-desktop@1x.jpg');
   }
 
   @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
     screen and (min-resolution: 2dppx) and (min-width: 1440px),
     screen and (min-devace-pixel-ratio: 2) and (min-width: 1440px) {
     .gradient {
-      background-image: url('./img/header/glass-effect-desktop@2x.jpg');
+      background-image: url('../img/header/glass-effect-desktop@2x.jpg');
       /* background-image: image-set('../img/header/glass-effect-desktop@2x.jpg'); */
     }
   }
