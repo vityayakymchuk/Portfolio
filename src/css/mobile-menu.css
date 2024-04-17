@@ -33,33 +33,31 @@
     background-color: var(--color-dark);
     background-position: center center;
 
-    background: linear-gradient(to left,
-        rgba(28, 29, 32, 1) 49.68%,
-        rgba(105, 41, 45, 1) 67.73%,
-        rgba(237, 59, 68, 1) 100%);
+    background: linear-gradient(
+      to left,
+      rgba(28, 29, 32, 1) 49.68%,
+      rgba(105, 41, 45, 1) 67.73%,
+      rgba(237, 59, 68, 1) 100%
+    );
 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: -webkit-image-set('../img/header/glass-effect-modal@1x.jpg');
-    background-image: image-set('../img/header/glass-effect-modal@1x.jpg');
+    /* background-image: -webkit-image-set('./img/header/glass-effect-modal@1x.jpg'); */
+    background-image: url('./img/header/glass-effect-modal@1x.jpg');
 
     z-index: -1000;
     /* backdrop-filter: blur(100px); */
   }
 
   @media screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px),
-  screen and (min-devace-pixel-ratio: 2) and (max-width: 767px) {
+    screen and (min-resolution: 2dppx) and (max-width: 767px),
+    screen and (min-devace-pixel-ratio: 2) and (max-width: 767px) {
     .gradient-modal {
-      background-image: -webkit-image-set('../img/header/glass-effect-modal@2x.jpg');
-      background-image: image-set('../img/header/glass-effect-modal@2x.jpg');
+      /* background-image: -webkit-image-set('./img/header/glass-effect-modal@2x.jpg'); */
+      background-image: url('./img/header/glass-effect-modal@2x.jpg');
     }
   }
-
-
-
-
 
   .mobile-top {
     position: absolute;
