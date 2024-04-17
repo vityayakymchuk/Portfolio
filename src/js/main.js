@@ -68,3 +68,4 @@ import './footer-form.js';
 // ---------------------------------------
 
 import './about-me.js';
+import './scroll.js';
