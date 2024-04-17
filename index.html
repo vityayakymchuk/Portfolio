@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/Portfolio/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to my personal portfolio! I’m a Fullstack Developer with extensive experience in creating web applications and websites. Explore my skills and projects to learn more about what I do. Discover my achievements and opportunities for collaboration on your next project. Dive into my portfolio now!"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -160,14 +164,17 @@
   <div class="about-me-accordion-section container">
     <ul class="about-me-accordion-list accordion-container">
       <li class="about-me-accordion-list-item ac">
-        <h5 class="about-me-accordion-list-item-title ac-header">
+        <h3 class="about-me-accordion-list-item-title ac-header">
           About me
-          <button class="accordion-list-item-button ac-trigger">
+          <button
+            class="accordion-list-item-button ac-trigger"
+            aria-label="Open/close information block"
+          >
             <svg class="accordion-list-item-icon" width="20" height="20">
               <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
             </svg>
           </button>
-        </h5>
+        </h3>
         <p class="accordion-list-item-text ac-panel">
           I am Lloyd Jefferson, a talented programmer with extensive expertise
           in software development. I have an understanding of different
@@ -191,14 +198,17 @@
         </p>
       </li>
       <li class="about-me-accordion-list-item ac">
-        <h5 class="about-me-accordion-list-item-title ac-header">
+        <h3 class="about-me-accordion-list-item-title ac-header">
           ROLE
-          <button class="accordion-list-item-button ac-trigger">
+          <button
+            class="accordion-list-item-button ac-trigger"
+            aria-label="Open/close information block"
+          >
             <svg class="accordion-list-item-icon" width="20" height="20">
               <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
             </svg>
           </button>
-        </h5>
+        </h3>
         <p class="accordion-list-item-text ac-panel">
           Frontend development
           <span class="indented-list"> HeadlessCMS,Wordpress </span>
@@ -206,14 +216,17 @@
         </p>
       </li>
       <li class="about-me-accordion-list-item ac">
-        <h5 class="about-me-accordion-list-item-title ac-header">
+        <h3 class="about-me-accordion-list-item-title ac-header">
           EDUCATION
-          <button class="accordion-list-item-button ac-trigger">
+          <button
+            class="accordion-list-item-button ac-trigger"
+            aria-label="Open/close information block"
+          >
             <svg class="accordion-list-item-icon" width="20" height="20">
               <use href="/Portfolio/assets/sprite-857690e6.svg#icon-accordian-down"></use>
             </svg>
           </button>
-        </h5>
+        </h3>
         <p class="accordion-list-item-text ac-panel">
           2018 - 2019 / Frontend Development Diploma, GoIT IT
           <span class="intended-enter"> School, New York</span>
@@ -422,12 +435,20 @@
       </div>
     </div>
     <div class="arrows swiper-buttons">
-      <button class="arrow-btn prev-btn-proj review-btn" type="button">
+      <button
+        class="arrow-btn prev-btn-proj review-btn"
+        type="button"
+        aria-label="Next photo"
+      >
         <svg class="arrow-icon">
           <use href="/Portfolio/assets/sprite-857690e6.svg#icon-right-arrow"></use>
         </svg>
       </button>
-      <button class="arrow-btn next-btn-proj review-btn" type="button">
+      <button
+        class="arrow-btn next-btn-proj review-btn"
+        type="button"
+        aria-label="Previos photo"
+      >
         <svg class="arrow-icon">
           <use href="/Portfolio/assets/sprite-857690e6.svg#icon-left-arrow"></use>
         </svg>
@@ -1023,37 +1044,46 @@
 <!-- <script type="module" src="./script.js"></script> -->
 
       <section class="reviews">
-    <div class="container reviews-container">
-        <h2 class="reviews-title">Reviews</h2>
-        <!-- текст про те що не знайдено елементи якщо буде помилка від апі -->
-        <p class="hide-element not-found">Not found<p>
-        <div class="mySwiper swiper">
-            <ul class="swiper-wrapper reviews-ul">      
-
-                
-            </ul>
-            <div class="swiper-buttons review-buttons">
-                <div class="button-prev">
-                    <button aria-label="next-review" class="review-btn" type="button">
-                        <svg class="review-icon" width="24px" height="24px">
-                            <use  href="/Portfolio/assets/sprite-857690e6.svg#icon-right-arrow"></use>
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="button-next">
-                    <button aria-label="next-review" class="review-btn" type="button">
-                        <svg class="review-icon" width="24px" height="24px">
-                            <use class="review-arrow" href="/Portfolio/assets/sprite-857690e6.svg#icon-left-arrow"></use>
-                        </svg>
-                    </button>
-                </div>
-            </div>   
+  <div class="container reviews-container">
+    <h2 class="reviews-title">Reviews</h2>
+    <!-- текст про те що не знайдено елементи якщо буде помилка від апі -->
+    <p class="hide-element not-found">Not found</p>
+    <p></p>
+    <div class="mySwiper swiper">
+      <ul class="swiper-wrapper reviews-ul"></ul>
+      <div class="swiper-buttons review-buttons">
+        <div class="button-prev">
+          <button
+            aria-label="next-review"
+            class="review-btn"
+            type="button"
+            aria-label="Next blocks"
+          >
+            <svg class="review-icon" width="24px" height="24px">
+              <use href="/Portfolio/assets/sprite-857690e6.svg#icon-right-arrow"></use>
+            </svg>
+          </button>
         </div>
-    </div>
-    
-</section>
 
+        <div class="button-next">
+          <button
+            aria-label="next-review"
+            class="review-btn"
+            type="button"
+            aria-label="Previos blocks"
+          >
+            <svg class="review-icon" width="24px" height="24px">
+              <use
+                class="review-arrow"
+                href="/Portfolio/assets/sprite-857690e6.svg#icon-left-arrow"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     </main>
     <footer class="footer" id="work-together">
@@ -1163,42 +1193,46 @@
 
     <!-- ========================= Backdrop =========================-->
 <div class="mobile-menu-wrapper" data-menu>
+  <div class="gradient-modal"></div>
 
-    <div class="gradient-modal"></div>
-
-    <div class="mobile-container-menu container">
-
-
-        <div class="mobile-top">
-            <button class="close-btn-backdrop" type="button" data-menu-close>
-                <svg class="header-svg-burger" width="14" height="14" aria-label="close button menu">
-                    <use href="/Portfolio/assets/sprite-857690e6.svg#icon-exit"></use>
-                </svg>
-            </button>
-        </div>
-
-        <nav class="mobile-navigation-wrapper">
-            <ul class="header-menu-wrapper list">
-                <li class="header-menu-item">
-                    <a class="header-menu-link " href="#about-me">About me</a>
-                </li>
-                <li class="header-menu-item">
-                    <a class="header-menu-link " href="#benefits-section-id">Benefits</a>
-                </li>
-                </li>
-                <li class="header-menu-item">
-                    <a class="header-menu-link " href="#projects-id">Projects</a>
-                </li>
-                <li class="header-menu-item">
-                    <a class="header-menu-link" href="#faq">FAQ</a>
-                </li>
-            </ul>
-        </nav>
-
-        <span class="btn-order-the-project"><a href="#work-together">Order the project</a></span>
+  <div class="mobile-container-menu container">
+    <div class="mobile-top">
+      <button class="close-btn-backdrop" type="button" data-menu-close>
+        <svg
+          class="header-svg-burger"
+          width="14"
+          height="14"
+          aria-label="close button menu"
+        >
+          <use href="/Portfolio/assets/sprite-857690e6.svg#icon-exit"></use>
+        </svg>
+      </button>
     </div>
+
+    <nav class="mobile-navigation-wrapper">
+      <ul class="header-menu-wrapper list">
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#about-me">About me</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#benefits-section-id">Benefits</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#projects-id">Projects</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+
+    <span class="btn-order-the-project"
+      ><a href="#work-together">Order the project</a></span
+    >
+  </div>
 </div>
 <!--========================= /Backdrop ========================= -->
+
 
     
   </body>
