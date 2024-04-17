@@ -1,18 +1,22 @@
-const accordionBtns = document.querySelectorAll('.faq-btn');
+const titles = document.querySelectorAll('.accordion-title');
+const contents = document.querySelectorAll('.accordion-content');
 
-accordionBtns.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const accordionItem = btn.closest('.faq-list-item ');
-    const accordionContent = accordionItem.querySelector('.is-hidden');
+titles.forEach(item => item.addEventListener('click', () => {
+  const activeContent = document.querySelector('#' + item.dataset.tab);
 
-    if (accordionItem.classList.contains('is-active')) {
-      accordionItem.classList.remove('is-active');
-      accordionContent.style.maxHeight = 0;
-      btn.querySelector('use').setAttribute('href', './img/sprite.svg#icon-accordian-down');
-    } else {
-      accordionItem.classList.add('is-active');
-      accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-      btn.querySelector('use').setAttribute('href', './img/sprite.svg#icon-accordion-up');
-    }
-  });
-});
+  if(activeContent.classList.contains('active')) {
+    activeContent.classList.remove('active');
+
+    activeContent.style.maxHeight = 0;
+  } else {
+    contents.forEach(element => {
+      element.classList.remove('active');
+      element.style.maxHeight = 0;
+    })
+    titles.forEach(element => element.classList.remove('active'));
+
+    item.classList.add('active');
+    activeContent.classList.add('active');
+    activeContent.style.maxHeight = activeContent.scrollHeight +'px';
+  }
+}))
