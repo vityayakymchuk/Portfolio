@@ -18,7 +18,11 @@ function closeMobileMenu(event) {
 
 function closeTablAndDeskMenu(event) {
   // event.preventDefault();
+
   if (event.target === event.currentTarget) return;
+
+  // btn.menuInTabletsAndDesktops.style.display = 'none';
+
   modalOffMenu();
 }
 
@@ -37,6 +41,7 @@ function modalOnMenu() {
 
 function modalOffMenu() {
   btn.menuInTabletsAndDesktops.classList.remove('is-menu');
+  // btn.menuInTabletsAndDesktops.style.display = 'none';
 }
 
 const listenerOn = btn.burger.addEventListener('click', modalOn);
