@@ -68,6 +68,7 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   padding-bottom: 20px;
+  width: 100%;
 }
 
 #user-email.valid {
