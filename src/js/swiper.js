@@ -28,19 +28,14 @@ function updateButtons(swiper) {
 
 
 
-const swiper = new Swiper ('.mySwiper', {
+const mySwiper = new Swiper ('.mySwiper', {
     slidesPerView: 1,
     spaceBetween: 16,
     loop: false,
-    slidesPerGroup: 1,
+    initialSlide: 1,
+    
     
     breakpoints: {
-        320: {
-            slidesPerView:1,
-            spaceBetween: 16,
-            slidesPerGroup: 1,
-
-        },
         768: {
             slidesPerView: 2,
             spaceBetween: 16,
@@ -49,7 +44,7 @@ const swiper = new Swiper ('.mySwiper', {
         1440: {
             slidesPerView: 4,
             spaceBetween: 16,
-        }
+        },
     },
 
     keyboard: {
@@ -59,15 +54,8 @@ const swiper = new Swiper ('.mySwiper', {
 
     navigation: {
       nextEl: nextButton,
-      prevEl: prevButton
-    },
-
-    // on: {
-    //     init: function() {
-    //         updateButtons(swiper);
-    //     },
-    // },
-
+      prevEl: prevButton,
+    },    
     
   });
 
