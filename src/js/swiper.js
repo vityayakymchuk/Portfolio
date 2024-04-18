@@ -35,7 +35,7 @@ const swiper = new Swiper ('.mySwiper', {
     slidesPerGroup: 1,
     
     breakpoints: {
-        320: {
+        375: {
             slidesPerView: 1,
             spaceBetween: 16,
             slidesPerGroup: 1,
@@ -61,30 +61,20 @@ const swiper = new Swiper ('.mySwiper', {
     navigation: {
       nextEl: nextButton,
       prevEl: prevButton
-    },
-
-    // on: {
-    //     init: function() {
-    //         updateButtons(swiper);
-    //     },
-    // },
-
-    
+    }, 
   });
 
 
+  
 
 
-// swiper.on('reachBeginning', updateButtons);
-// swiper.on('reachEnd', updateButtons);
-
-nextButton.addEventListener('click', (e) => {
-    swiper.slideNext(e);
-       
-})
-prevButton.addEventListener('click', (e) => {
-    swiper.slidePrev(e);       
-})
+    // nextButton.addEventListener('click', (e) => {
+    //     swiper.slideNext(e);
+        
+    // })
+    // prevButton.addEventListener('click', (e) => {
+    //     swiper.slidePrev(e);       
+    // })
 
 document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft') {
