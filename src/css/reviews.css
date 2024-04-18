@@ -97,6 +97,9 @@
 .review-btn:disabled {
   border: 1px solid var(--border-color);
 }
+.review-btn:disabled svg {
+  stroke: var(--color-dark-grey);
+}
 
 .review-icon {
   stroke: rgba(255, 255, 255, 0.5);
